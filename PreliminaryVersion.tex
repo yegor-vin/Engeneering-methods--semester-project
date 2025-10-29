@@ -1,0 +1,112 @@
+
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{202F}{\,} % handle Unicode space
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\geometry{margin=1in}
+\title{Preliminary Version of Project Proposal}
+\author{Team Project – Applied Research}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Indicators and Measurable Goals}
+
+To ensure transparent progress evaluation, the project defines measurable indicators (Key Performance Indicators – KPIs) linked to the main objectives. These indicators quantify the efficiency, usability, and societal impact of the proposed AI‑based navigation and open‑source mapping platform.
+
+\begin{itemize}
+    \item \textbf{System Performance:} Reduce route computation time by at least \textbf{25\%} compared to baseline open‑source routing algorithms.  
+    \emph{Reason:} A 25 \% reduction is ambitious yet feasible with optimized algorithms and modern hardware, enabling improved real‑time responsiveness in mobility applications.
+    \item \textbf{Accuracy of Predictions:} Achieve at least \textbf{90\% accuracy} in real‑time traffic and mobility predictions using AI‑based models.  
+    \emph{Reason:} Recent literature reports high accuracy (e.g., ~96–98 \%) for advanced models in controlled studies (*Abduljabbar et al., 2025*)~\cite{abduljabbar2025machine}. Setting 90 \% ensures room for pilot variability while aiming for high performance.
+    \item \textbf{Data Coverage:} Expand open‑source geospatial data coverage by \textbf{20\%} in selected pilot regions through user‑driven mapping and automated data enrichment.  
+    \emph{Reason:} Studies show that open data platforms like OpenStreetMap (OSM) have heterogeneous coverage and completeness (e.g., 51 \% to 82 \%) (*Herfort et al., 2023*)~\cite{herfort2023data}. A 20 \% improvement is realistic yet meaningful.
+    \item \textbf{User Satisfaction:} Attain a minimum \textbf{85\% satisfaction rate} in pilot testing surveys regarding map accuracy, usability, and visual clarity.  
+    \emph{Reason:} High satisfaction indicates successful adoption of the system; while 100 \% is unrealistic, 85 \% sets a strong bar for acceptance in pilot users.
+    \item \textbf{Technology Readiness Level (TRL):} Increase system readiness from TRL 4 (validated in lab) to TRL 6 (demonstrated in relevant environment) by project completion.  
+    \emph{Reason:} Advancing two TRL levels in one project is often considered a significant milestone in applied research projects.
+    \item \textbf{Open‑Source Contribution:} Publish at least \textbf{three reusable software components} under a permissive license (MIT/GPL) to promote transparency and reuse.  
+    \emph{Reason:} Demonstrating open‑source deliverables shows alignment with openness and reuse goals; three components strike a balance between ambition and feasibility.
+\end{itemize}
+
+\section{Comparison of Mapping and Navigation Platforms}
+
+A comparative analysis of major mapping and navigation platforms was performed to highlight the advantages and limitations of commercial and open‑source solutions relevant to this project.
+
+\begin{table}[h!]
+\centering
+\caption{Comparison of Commercial and Open‑Source Mapping Platforms}
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Feature} & \textbf{Google Maps} & \textbf{OpenStreetMap (OSM)} & \textbf{Mapbox / Open‑Source Tools} \\
+\hline
+\textbf{License / Cost} & Proprietary; API usage fees & Fully open, free & Freemium model with open components \\
+\hline
+\textbf{Data Source} & Google proprietary data & Community‑driven open data & OSM + proprietary enhancements \\
+\hline
+\textbf{Offline Availability} & Limited (mobile only) & Supported via third‑party apps & Supported (via SDK) \\
+\hline
+\textbf{Customizability} & Low; limited API flexibility & High; full data access and editability & High; modular customization \\
+\hline
+\textbf{Data Privacy} & Centralised data collection & Decentralised, user‑controlled & User‑defined depending on deployment \\
+\hline
+\textbf{AI/ML Integration} & Proprietary, closed & Requires custom integration & Available via open frameworks (e.g., TensorFlow, PyTorch) \\
+\hline
+\textbf{Community Support} & Commercial support only & Large global community & Developer and open‑source community \\
+\hline
+\end{tabular}
+\label{tab:map‑comparison}
+\end{table}
+
+The analysis demonstrates that while commercial solutions such as Google Maps provide stable performance and global data coverage, open‑source approaches (OpenStreetMap, Mapbox) offer superior flexibility, transparency, and integration potential for AI‑driven mobility analytics.
+
+\section{Impact and Risk Assessment}
+
+\subsection{Project Impact}
+
+The proposed project contributes significantly to applied research and technological innovation by integrating artificial intelligence, open data, and geospatial analytics. Its anticipated impacts include:
+
+\begin{itemize}
+    \item \textbf{Technological Impact:} Introduction of an open, AI‑powered mapping platform that enhances route optimization, environmental monitoring, and mobility decision‑making.
+    \item \textbf{Scientific Impact:} Advancement of machine learning techniques for geospatial prediction, contributing to both academic research and open‑source AI communities.
+    \item \textbf{Economic Impact:} Potential for reducing navigation service costs by leveraging open data and reusable algorithms, promoting domestic technological independence.
+    \item \textbf{Social and Environmental Impact:} Improved traffic efficiency, lower emissions due to optimized routing, and greater public access to transparent, privacy‑respecting navigation tools.
+    \item \textbf{Educational Impact:} Engagement of young researchers and students in open‑source software development, fostering long‑term capacity building.
+\end{itemize}
+
+\subsection{Risk Analysis}
+
+Despite its innovative nature, the project faces several risks that must be mitigated through systematic planning and management.
+
+\begin{table}[h!]
+\centering
+\caption{Risk Assessment and Mitigation Strategies}
+\begin{tabular}{|p{3cm}|p{5cm}|p{6cm}|}
+\hline
+\textbf{Risk Type} & \textbf{Description} & \textbf{Mitigation Strategy} \\
+\hline
+\textbf{Technical Risk} & Insufficient AI model accuracy or integration challenges with open data sources. & Employ iterative testing, data augmentation, and hybrid modelling; involve AI specialists and open‑data experts. \\
+\hline
+\textbf{Organisational Risk} & Coordination between research and application partners may cause delays. & Establish clear project governance, regular meetings, and milestone reviews. \\
+\hline
+\textbf{Data Risk} & Incomplete or inconsistent open‑source data may reduce reliability. & Implement automated validation pipelines and data fusion from multiple open datasets. \\
+\hline
+\textbf{Financial Risk} & Budget overruns due to unforeseen development or infrastructure costs. & Reserve 10 \% contingency funds and monitor expenditures quarterly. \\
+\hline
+\textbf{User Adoption Risk} & Low engagement from pilot users or limited scalability. & Conduct co‑design workshops, usability testing, and targeted dissemination campaigns. \\
+\hline
+\end{tabular}
+\label{tab:risk‑table}
+\end{table}
+
+Systematic risk management and continuous evaluation will ensure the timely and high‑quality delivery of project outcomes with measurable, sustainable impact.
+
+\bibliographystyle{plain}
+\bibliography{PreliminaryVersionReferences}
+
+\end{document}
