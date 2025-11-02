@@ -1,112 +1,125 @@
-
 \documentclass[12pt]{article}
-\usepackage{geometry}
 \usepackage[utf8]{inputenc}
-\DeclareUnicodeCharacter{202F}{\,} % handle Unicode space
-\usepackage{graphicx}
+\usepackage{geometry}
 \usepackage{booktabs}
 \usepackage{array}
-\usepackage{caption}
+\usepackage{hyperref}
+
 \geometry{margin=1in}
-\title{Preliminary Version of Project Proposal}
-\author{Team Project – Applied Research}
+\title{Transit Route Planner (Open, Privacy-first, Offline-capable)}
+\author{Team Project}
 \date{\today}
+
 
 \begin{document}
 \maketitle
 
-\section{Indicators and Measurable Goals}
+\begin{abstract}
+This preliminary document describes an open-source, privacy-respecting transit route-planning application with extended platform support (Android, iOS, mobile Linux distributions such as postmarketOS, and feature-phone platforms such as KaiOS). The application focuses on highly configurable multi-criteria route planning, offline operation for core features, and community-driven development and verification.
+\end{abstract}
 
-To ensure transparent progress evaluation, the project defines measurable indicators (Key Performance Indicators – KPIs) linked to the main objectives. These indicators quantify the efficiency, usability, and societal impact of the proposed AI‑based navigation and open‑source mapping platform.
-
+\section{Objectives}
+The project aims to design, implement and demonstrate a practical, open-source public-transit route planner that:
 \begin{itemize}
-    \item \textbf{System Performance:} Reduce route computation time by at least \textbf{25\%} compared to baseline open‑source routing algorithms.  
-    \emph{Reason:} A 25 \% reduction is ambitious yet feasible with optimized algorithms and modern hardware, enabling improved real‑time responsiveness in mobility applications.
-    \item \textbf{Accuracy of Predictions:} Achieve at least \textbf{90\% accuracy} in real‑time traffic and mobility predictions using AI‑based models.  
-    \emph{Reason:} Recent literature reports high accuracy (e.g., ~96–98 \%) for advanced models in controlled studies (*Abduljabbar et al., 2025*)~\cite{abduljabbar2025machine}. Setting 90 \% ensures room for pilot variability while aiming for high performance.
-    \item \textbf{Data Coverage:} Expand open‑source geospatial data coverage by \textbf{20\%} in selected pilot regions through user‑driven mapping and automated data enrichment.  
-    \emph{Reason:} Studies show that open data platforms like OpenStreetMap (OSM) have heterogeneous coverage and completeness (e.g., 51 \% to 82 \%) (*Herfort et al., 2023*)~\cite{herfort2023data}. A 20 \% improvement is realistic yet meaningful.
-    \item \textbf{User Satisfaction:} Attain a minimum \textbf{85\% satisfaction rate} in pilot testing surveys regarding map accuracy, usability, and visual clarity.  
-    \emph{Reason:} High satisfaction indicates successful adoption of the system; while 100 \% is unrealistic, 85 \% sets a strong bar for acceptance in pilot users.
-    \item \textbf{Technology Readiness Level (TRL):} Increase system readiness from TRL 4 (validated in lab) to TRL 6 (demonstrated in relevant environment) by project completion.  
-    \emph{Reason:} Advancing two TRL levels in one project is often considered a significant milestone in applied research projects.
-    \item \textbf{Open‑Source Contribution:} Publish at least \textbf{three reusable software components} under a permissive license (MIT/GPL) to promote transparency and reuse.  
-    \emph{Reason:} Demonstrating open‑source deliverables shows alignment with openness and reuse goals; three components strike a balance between ambition and feasibility.
+  \item supports fine-grained multi-criteria route selection (line, operator, vehicle type, transfers, payment methods, time/distance priorities, etc.);
+  \item provides limited but useful offline functionality (maps, route planning, and navigation when pre-downloaded);
+  \item minimizes data collection and avoids data gathering for sale; and
+  \item supports broad platforms (Android, iOS, postmarketOS, KaiOS where feasible).
 \end{itemize}
 
-\section{Comparison of Mapping and Navigation Platforms}
+\section{Indicators and Measurable Goals}
+\subsection{Key Performance Indicators (KPIs) and justification}
 
-A comparative analysis of major mapping and navigation platforms was performed to highlight the advantages and limitations of commercial and open‑source solutions relevant to this project.
+\begin{itemize}
+  \item \textbf{Correctness of route generation:} Achieve at least \textbf{95\%} agreement with official timetable-based routes in selected pilot regions (measured versus transit agency schedules).\\
+  \emph{Reason:} High correctness ensures users can rely on recommended itineraries; 95\% is realistic when using authoritative schedule feeds (GTFS) and careful parsing/validation (GTFS is widely used by transit agencies).
+
+  \item \textbf{Offline functionality coverage:} Provide offline map tiles and routing data covering \textbf{90\%} of the pilot-region road and transit network within pre-download size limits (e.g., <500 MB).\\
+  \emph{Reason:} Offline support must be practically useful without excessive storage; 90\% coverage balances usability and size constraints, relying on tile compression and vector-based route graphs (Map SDKs support offline packaging)~\cite{mapbox_offline}.
+
+  \item \textbf{Privacy compliance:} The application must not transmit or log personal location traces to third-party servers by default; optional telemetry must be opt-in and fully documented.\\
+  \emph{Reason:} Clear privacy design differentiates the project from commercial apps that collect user data (see Google policies and recent enforcement actions)~\cite{google_privacy,google_settlement}.
+
+  \item \textbf{Platform support:} Release functional clients for at least \textbf{Android, iOS,} and \textbf{one mobile Linux distribution} (postmarketOS) within the project timeframe.\\
+  \emph{Reason:} Supporting a Linux mobile distribution demonstrates broader accessibility; postmarketOS has active development and received community funding (NLnet / NGI funding)~\cite{postmarketos,nlnet_postmarketos}.
+
+  \item \textbf{Open-source deliverables:} Publish at least \textbf{3 reusable components} (map rendering module, offline packager, and multi-criteria routing engine) under an OSI-compatible license (e.g., MIT).\\
+  \emph{Reason:} Delivering reusable modules accelerates uptake and community contributions, which is a core declared goal of the project.
+
+  \item \textbf{User satisfaction in pilots:} Achieve a pilot user satisfaction score of at least \textbf{80\%} on usability and accuracy metrics (measured via surveys).\\
+  \emph{Reason:} 80\% is a realistic target for early demos and indicates acceptable user experience for further development.
+\end{itemize}
+
+\section{State of the Art and Comparative Analysis}
+\subsection{Short review}
+Existing commercial services (Google Maps, Apple Maps) provide broad coverage and integrated traffic/vehicle-position feeds, but typically collect user data and limit customization. OpenStreetMap (OSM) provides community-driven map data with variable completeness across regions (OpenStreetMap Wiki)~\cite{osm_completeness}. Map SDKs such as Mapbox offer offline packaging that can be used to support offline operation in apps~\cite{mapbox_offline}. Mobile Linux distributions (postmarketOS) and feature-phone platforms (KaiOS) expand potential device coverage beyond Android/iOS~\cite{postmarketos,kaios_home}.
+
+
+\subsection{Comparison table: Google Maps vs Open-Source Approaches}
+
+Relevant documentation and discussions on offline support and privacy are available in Mapbox's offline docs and Google privacy resources~\cite{mapbox_offline,google_privacy}.
 
 \begin{table}[h!]
 \centering
-\caption{Comparison of Commercial and Open‑Source Mapping Platforms}
-\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\caption{Comparison of mapping/navigation approaches relevant to this project}
+\begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
 \hline
-\textbf{Feature} & \textbf{Google Maps} & \textbf{OpenStreetMap (OSM)} & \textbf{Mapbox / Open‑Source Tools} \\
-\hline
-\textbf{License / Cost} & Proprietary; API usage fees & Fully open, free & Freemium model with open components \\
-\hline
-\textbf{Data Source} & Google proprietary data & Community‑driven open data & OSM + proprietary enhancements \\
-\hline
-\textbf{Offline Availability} & Limited (mobile only) & Supported via third‑party apps & Supported (via SDK) \\
-\hline
-\textbf{Customizability} & Low; limited API flexibility & High; full data access and editability & High; modular customization \\
-\hline
-\textbf{Data Privacy} & Centralised data collection & Decentralised, user‑controlled & User‑defined depending on deployment \\
-\hline
-\textbf{AI/ML Integration} & Proprietary, closed & Requires custom integration & Available via open frameworks (e.g., TensorFlow, PyTorch) \\
-\hline
-\textbf{Community Support} & Commercial support only & Large global community & Developer and open‑source community \\
-\hline
+\textbf{Feature} & \textbf{Commercial (Google Maps)} & \textbf{Open-source (OSM + SDKs)} \\ \hline
+License / cost & Proprietary, API fees for some usage & Open data; SDK costs may apply for hosted services \\ \hline
+Data control & Centralized, vendor-controlled & Community editable (OSM), full data export \\ \hline
+Offline support & Limited, vendor-dependent & Strong support via SDKs and offline tile packs \\ \hline
+Privacy & Extensive telemetry/collection (subject to policies) & Can be designed to minimise collection; transparent codebase \\ \hline
+Customization & Limited by API & High: data and rendering fully customizable \\ \hline
+Platform reach & Excellent on Android/iOS & High when targeting common SDKs; additional work needed for postmarketOS/KaiOS \\ \hline
 \end{tabular}
-\label{tab:map‑comparison}
+\label{tab:comparison}
 \end{table}
 
-The analysis demonstrates that while commercial solutions such as Google Maps provide stable performance and global data coverage, open‑source approaches (OpenStreetMap, Mapbox) offer superior flexibility, transparency, and integration potential for AI‑driven mobility analytics.
 
 \section{Impact and Risk Assessment}
 
-\subsection{Project Impact}
-
-The proposed project contributes significantly to applied research and technological innovation by integrating artificial intelligence, open data, and geospatial analytics. Its anticipated impacts include:
-
+\subsection{Impact}
+The project delivers technological, social and educational value:
 \begin{itemize}
-    \item \textbf{Technological Impact:} Introduction of an open, AI‑powered mapping platform that enhances route optimization, environmental monitoring, and mobility decision‑making.
-    \item \textbf{Scientific Impact:} Advancement of machine learning techniques for geospatial prediction, contributing to both academic research and open‑source AI communities.
-    \item \textbf{Economic Impact:} Potential for reducing navigation service costs by leveraging open data and reusable algorithms, promoting domestic technological independence.
-    \item \textbf{Social and Environmental Impact:} Improved traffic efficiency, lower emissions due to optimized routing, and greater public access to transparent, privacy‑respecting navigation tools.
-    \item \textbf{Educational Impact:} Engagement of young researchers and students in open‑source software development, fostering long‑term capacity building.
+  \item \textbf{Technological:} Practical open-source route planner with offline capabilities and multi-criteria filtering usable by NGOs, small municipalities, and developers.
+  \item \textbf{Social / Environmental:} Better public-transit usability can increase public transport uptake and reduce car usage, contributing to emissions reductions.
+  \item \textbf{Economic:} Reduces lock-in to proprietary services and provides reusable components for local tech ecosystems.
+  \item \textbf{Educational:} Encourages contributions from students and junior developers, building skills in geospatial software and open data practices.
 \end{itemize}
 
 \subsection{Risk Analysis}
-
-Despite its innovative nature, the project faces several risks that must be mitigated through systematic planning and management.
-
 \begin{table}[h!]
 \centering
-\caption{Risk Assessment and Mitigation Strategies}
-\begin{tabular}{|p{3cm}|p{5cm}|p{6cm}|}
+\caption{Key Risks and short description}
+\begin{tabular}{|p{4cm}|p{10cm}|}
 \hline
-\textbf{Risk Type} & \textbf{Description} & \textbf{Mitigation Strategy} \\
-\hline
-\textbf{Technical Risk} & Insufficient AI model accuracy or integration challenges with open data sources. & Employ iterative testing, data augmentation, and hybrid modelling; involve AI specialists and open‑data experts. \\
-\hline
-\textbf{Organisational Risk} & Coordination between research and application partners may cause delays. & Establish clear project governance, regular meetings, and milestone reviews. \\
-\hline
-\textbf{Data Risk} & Incomplete or inconsistent open‑source data may reduce reliability. & Implement automated validation pipelines and data fusion from multiple open datasets. \\
-\hline
-\textbf{Financial Risk} & Budget overruns due to unforeseen development or infrastructure costs. & Reserve 10 \% contingency funds and monitor expenditures quarterly. \\
-\hline
-\textbf{User Adoption Risk} & Low engagement from pilot users or limited scalability. & Conduct co‑design workshops, usability testing, and targeted dissemination campaigns. \\
-\hline
+\textbf{Risk Type} & \textbf{Description} \\ \hline
+Technical & Integration of heterogeneous transit data (GTFS variants, regional formats) and offline packaging constraints may complicate development. \\ \hline
+Data availability & Some regions lack complete open transit data or OSM coverage; data freshness varies~\cite{osm_completeness}. \\ \hline
+Organisational & Maintaining coordination in an open-source project and handling contributions can introduce overhead. \\ \hline
+Financial & Hosting, map tiles, and continuous maintenance require funding beyond initial development. \\ \hline
+User adoption & Competing with established products requires strong user-focused differentiators (privacy, customization, offline support). \\ \hline
+Team experience & The team is primarily composed of young developers with limited production experience; this may slow early development and increase the need for mentorship and external collaboration. \\ \hline
 \end{tabular}
-\label{tab:risk‑table}
+\label{tab:risks}
 \end{table}
 
-Systematic risk management and continuous evaluation will ensure the timely and high‑quality delivery of project outcomes with measurable, sustainable impact.
+\section{Planned Outputs and Timeline (high level)}
+\begin{itemize}
+  \item \textbf{M1 (0--3 months):} Requirements, data source inventory (GTFS feeds, OSM), technical architecture, and initial prototypes for map rendering.
+  \item \textbf{M2 (3--9 months):} Offline packaging tool, basic routing with multi-criteria filtering, Android and postmarketOS proof-of-concept clients.
+  \item \textbf{M3 (9--18 months):} iOS client, broader pilot deployment, documentation, and publication of 3 reusable components under MIT license.
+\end{itemize}
+
+\section{Deliverables}
+\begin{enumerate}
+  \item Preliminary report and data inventory (LaTeX + PDF).
+  \item Source code repository with MIT license and three modular components.
+  \item Pilot dataset and offline package for one test region.
+  \item User evaluation report (pilot surveys and metrics).
+\end{enumerate}
 
 \bibliographystyle{plain}
-\bibliography{PreliminaryVersionReferences}
+\bibliography{PreliminaryVersion_Refs}
 
 \end{document}
