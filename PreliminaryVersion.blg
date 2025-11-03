@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: PreliminaryVersion.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+Database file #1: PreliminaryVersion_Refs.bib
+Warning--to sort, need author or key in mapbox_offline
+Warning--to sort, need author or key in google_privacy
+Warning--to sort, need author or key in postmarketos
+Warning--to sort, need author or key in nlnet_postmarketos
+Warning--to sort, need author or key in osm_completeness
+Warning--to sort, need author or key in kaios_home
+You've used 7 entries,
+            2118 wiz_defined-function locations,
+            522 strings with 4540 characters,
+and the built_in function-call counts, 1265 in all, are:
+= -- 130
+> -- 13
+< -- 0
++ -- 9
+- -- 2
+* -- 46
+:= -- 170
+add.period$ -- 22
+call.type$ -- 7
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 13
+duplicate$ -- 52
+empty$ -- 156
+format.name$ -- 2
+if$ -- 302
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 1
+newline$ -- 39
+num.names$ -- 2
+pop$ -- 51
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 43
+stack$ -- 0
+substring$ -- 35
+swap$ -- 7
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 6
+while$ -- 2
+width$ -- 8
+write$ -- 74
+(There were 6 warnings)
