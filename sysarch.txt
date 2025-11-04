@@ -32,5 +32,5 @@ Routes (times, stops, does not exist, new)
 Line route (if differs (manual, GNSS))
 
 [Text - Handling of filter data]
-1. Filter out excluded options from selection pool OR include included data into selection pool (whichever option was used) - applicable to 
-2. 
+1. Filter pool based on mandatory options (options excluding priority)
+2.
