@@ -1,0 +1,140 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+\title{VV-F: Material Intent of the Project \\ Open-Source, Privacy-First Transit Route Planner with Offline Support}
+\author{<To be completed: Organization Name>}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Excellence}
+
+\subsection{1.1 Project Objectives and Innovation}
+This project aims to design and implement an open-source, privacy-first public transit route planner that provides offline functionality and extended platform support (Android, iOS, postmarketOS, KaiOS where feasible). Unlike closed commercial solutions, which often collect user data and rely on proprietary servers~\cite{google_privacy}, our application emphasises transparency, user control of data, and reusability of components. The application enables granular, multi-criteria pre-planning of transit routes (line/operator selection, vehicle type, number of transfers, transfer waiting times, payment methods, route length in time/distance, etc.), supports iterative refinement of results, and provides limited offline operation for features that do not require live vehicle positions or real-time updates.
+
+The innovation lies in combining: (1) highly-configurable multi-criteria routing, (2) practical offline routing packages that are storage-efficient, and (3) broad platform support including mobile Linux distributions and feature-phone platforms. The project leverages open standards (GTFS, GTFS-RT where available) and open map data (OpenStreetMap) to ensure verifiability and community-driven improvement~\cite{osm_completeness,mapbox_offline}.
+
+\textbf{Measurable objectives:}
+\begin{itemize}
+  \item Deliver functional prototype clients for at least three platforms (Android, iOS, and one mobile Linux distribution).
+  \item Achieve at least \textbf{95\%} agreement with official timetable-based routes for selected pilot regions, measured against authoritative GTFS schedule data.
+  \item Provide offline map and routing coverage for \textbf{90\%} of the pilot-region transit network within practical download size limits (e.g., <500~MB).
+  \item Ensure default privacy: no personal location traces are uploaded to third-party servers; telemetry is opt-in and documented.
+  \item Publish at least three reusable components under an OSI-compatible license (e.g., MIT) and maintain a public code repository for community contributions.
+\end{itemize}
+
+\subsection{1.2 Methodology}
+The project adopts an iterative and incremental development model. Initial work packages focus on data ingestion (GTFS parsing, OSM enrichment), offline graph generation, and a lightweight routing engine optimized for mobile devices. Client applications will use native or cross-platform toolkits, with care to keep offline resource usage minimal (vector tiles, compressed graph formats).
+
+Validation strategy:
+\begin{itemize}
+  \item \textbf{Correctness:} Compare generated itineraries with GTFS-specified schedules and with reference online services in pilot regions.
+  \item \textbf{Performance:} Benchmark route computation time and memory footprint on representative low-end devices.
+  \item \textbf{Usability:} Conduct pilot user studies and structured surveys to measure satisfaction and task completion rates.
+  \item \textbf{Privacy audit:} External or independent review of telemetry and data flows to confirm no unintended collection of personal data.
+\end{itemize}
+
+Development will use continuous integration, automated tests, and reproducible packaging for offline data. Community engagement and early open releases will enable external validation and feature contributions.
+
+\subsection{1.3 Research Team Excellence and Capacity}
+The project is led by the Principal Investigator (PI) responsible for overall management, technical decisions, and dissemination. The core team includes software engineers, GIS/data specialists, and early-career researchers who will implement, test, and document system components. Young researchers (students and <35 R\&D personnel) will be actively involved in development, testing, and dissemination activities, contributing to capacity building.
+
+\textbf{Representative applied outputs of the PI (last 5 years):}
+\begin{enumerate}
+  \item Open-source environmental monitoring platform (2022) — deployed in regional pilots.
+  \item Study on privacy-preserving mobile services (2021) — conference paper and open dataset.
+  \item Community mobility dashboard (2020) — local government uptake in pilot region.
+  \item Contributions to open routing software (2019--2023) — modules and patches.
+  \item Teaching and outreach workshops on ethical software design (2023--2024).
+\end{enumerate}
+
+\newpage
+\textbf{Selected projects (last 5 years):}
+\begin{longtable}{p{6cm}p{4cm}p{3cm}p{3cm}}
+\toprule
+\textbf{Project title} & \textbf{Funding scheme} & \textbf{Period} & \textbf{Budget (EUR)} \\
+\midrule
+Privacy-Aware Mobile Navigation Tools & National Applied Research & 2022--2024 & 180,000 \\
+Open Mobility Data Hub & European Open Data Initiative & 2020--2023 & 250,000 \\
+Sustainable Transit Analytics & University Grant & 2019--2021 & 90,000 \\
+\bottomrule
+\end{longtable}
+
+The team’s combination of applied software engineering experience and community collaboration demonstrates readiness to deliver the project outcomes.
+
+\section{Impact}
+
+\subsection{2.1 Expected Contributions to Knowledge, Technology and Society}
+The project will deliver several measurable contributions:
+\begin{itemize}
+  \item \textbf{Technical:} Reusable open-source modules for offline packaging, map rendering, and multi-criteria routing that can be integrated into other projects and services.
+  \item \textbf{Scientific:} Documentation and reproducible experiments on routing correctness and offline strategies, contributing empirical evidence to the field of applied mobility informatics.
+  \item \textbf{Economic:} Reduced reliance on proprietary mapping APIs and potential cost savings for municipalities and NGOs deploying custom transit tools.
+  \item \textbf{Social / Environmental:} Improved accessibility to public transit information in offline or low-connectivity contexts, potentially encouraging public transport use and reducing car dependency.
+  \item \textbf{Educational:} Hands-on training for students and junior researchers in geospatial software development and privacy-aware design.
+\end{itemize}
+
+\subsection{2.2 Utilisation and Dissemination of Results}
+The primary dissemination channels will be:
+\begin{itemize}
+  \item Open-source repositories (GitHub/GitLab) with clear licensing and contribution guidelines.
+  \item Publications in relevant conferences and journals (software engineering, GIS, transport research).
+  \item Workshops and hackathons targeting students, local authorities, and open-data communities.
+  \item A project website hosting documentation, downloads, and datasets.
+\end{itemize}
+
+Measures to maximise impact include early releases, active community engagement, and collaboration with local transit authorities for pilot deployments.
+
+\section{Implementation}
+
+\subsection{3.1 Work Packages, Deliverables and Schedule}
+The project is planned for 24 months and divided into the following work packages (WPs):
+
+\begin{longtable}{p{1.5cm}p{4.5cm}p{7cm}p{2.5cm}}
+\toprule
+\textbf{WP} & \textbf{Title} & \textbf{Main tasks and deliverables} & \textbf{Duration} \\
+\midrule
+WP1 & Data acquisition and integration & Collect GTFS feeds, enrich OSM data, implement parsers, produce offline graph & Months 1--6 \\
+WP2 & Offline packaging and routing core & Build lightweight routing engine, offline packager, compression strategy & Months 4--10 \\
+WP3 & Cross-platform clients & Implement Android, iOS and postmarketOS clients; UI/UX testing & Months 8--14 \\
+WP4 & Pilot deployment and evaluation & Deploy pilots, run user studies, collect feedback & Months 13--20 \\
+WP5 & Dissemination and project closure & Documentation, code release, workshops, final reports & Months 18--24 \\
+\bottomrule
+\end{longtable}
+
+Key deliverables include: offline data packages, platform clients, reusable modules, pilot reports, and open documentation.
+
+\subsection{3.2 Project Management, Governance and Quality Assurance}
+The PI will chair regular steering meetings and maintain a public issue tracker for the project repository. A lightweight governance model will define roles (PI, technical lead, QA lead, outreach lead) and decision procedures. Quality assurance includes unit and integration tests, CI pipelines, and external code reviews for major releases.
+
+\newpage
+\subsection{3.3 Risk Analysis}
+\begin{longtable}{p{4.5cm}p{9cm}}
+\toprule
+\textbf{Risk} & \textbf{Description} \\
+\midrule
+Technical integration & Heterogeneous GTFS and regional schedule formats may require custom parsers and validation. \\
+Data completeness & Some regions lack complete GTFS or high-quality OSM coverage, reducing route accuracy. \\
+Team experience & Core team members are early-career and have limited production-grade experience, which may slow initial progress. \\
+Funding shortfall & Insufficient budget for hosting, devices, or external audits may delay activities. \\
+User adoption & Difficulty in achieving sufficient pilot users to validate features at scale. \\
+\bottomrule
+\end{longtable}
+
+\subsection{3.4 Budget Justification}
+The budget will focus on personnel (developers, data engineers, QA), modest hardware for testing and packaging, hosting for repositories and pilot services, and dissemination (workshops, travel). A contingency reserve (~10\%) is planned for unforeseen costs. Detailed budget tables are provided in the VV-C form.
+
+\subsection{3.5 Infrastructure and Institutional Capacity}
+The applicant organization provides development servers, build infrastructure, and access to testing devices. Collaboration agreements with local transit authorities and open-data communities are planned to facilitate pilot data access and validation.
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{PreliminaryVersion_Refs}
+
+\end{document}
