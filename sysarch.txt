@@ -42,7 +42,7 @@ Line route (if differs (manual, GNSS))
 3.
 
 [Text - handling of offline data updates]
-Offline data will be stored in chunks. Map data by reqions, route data by company. Client devices will contact central server periodically or on-demand for list of current data chunk SHA512 hashes. After comparing hashes of stored data (stored in database, pre-computed), and if differing hashes are found, user will be notified to download updates, or they will be automatically downloaded based on user preferences.
+Offline data will be stored in chunks. Map data by regions, route data by company. Client devices will contact central server periodically or on-demand for list of current data chunk SHA512 hashes. After comparing hashes of stored data (stored in database, pre-computed), and if differing hashes are found, user will be notified to download updates, or they will be automatically downloaded based on user preferences.
 Last update times will also be presented, however hashes will be used for comparison to avoid user errors (e.g. new date is entered as older). After download, hashes will be computed for downloaded files to verify their integrity.
 P2P download/upload options may be added in the future to off-load bandwidth from our servers to users who are willing to share their bandwidth. This could be based on BitTorrent protocol in combination with NAT traversal techniques such as those used by WebRTC (if not WebRTC itself) to get around CG-NAT or firewalling.
 
