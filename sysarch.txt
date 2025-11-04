@@ -1,10 +1,6 @@
 [TODO]
 Describe handling of filter data
 Describe source for map data
-Describe handling of offline data updates
-Describe handling of user-edited content
-List out filter options (not part of the text)
-List features available for KaiOS (due to high system limitations)
 List user-editable items
 
 [Other features]
