@@ -1,7 +1,6 @@
 [TODO]
 Describe handling of filter data
 Describe source for map data
-List user-editable items
 Create diagram for data update handling
 Create diagram for filter option handling
 
@@ -37,8 +36,9 @@ Routes (times, stops, does not exist, new)
 Line route (if differs (manual, GNSS))
 
 [Text - Handling of filter data]
-1. Filter pool based on mandatory options (options excluding priority)
-2.
+1. Filter pool of options based on mandatory options (options excluding priority)
+2. Sort used options based on global-priority
+3.
 
 [Text - handling of offline data updates]
 Offline data will be stored in chunks. Map data by reqions, route data by company. Client devices will contact central server periodically or on-demand for list of current data chunk SHA512 hashes. After comparing hashes of stored data (stored in database, pre-computed), and if differing hashes are found, user will be notified to download updates, or they will be automatically downloaded based on user preferences.
