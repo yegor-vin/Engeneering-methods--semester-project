@@ -7,7 +7,14 @@ List out filter options (not part of the text)
 List features available for KaiOS (due to high system limitations)
 List user-editable items
 
+[Other features]
+Live vehicle position
+Search vehicle by license plate/locomotive number/...
+Navigation
+
 [Filter options list]
+Start + Destination
+Time - departure|arrival
 Transport companies -- [exclude|include [priority-global if breached]] [preferred(priority-local)]
 transit lines -- [exclude|include [priority-global if breached]]
 vehicle types (train/bus/ship/plane/...) -- [exclude|include [priority-global if breached]] [preferred(priority-local)]
