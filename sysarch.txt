@@ -3,6 +3,7 @@ Describe handling of filter data - order will be used for diagram
 Describe source for map data
 Describe handling of offline data updates
 List out filter options (not part of the text)
+List features available for KaiOS (due to high system limitations)
 
 [Filter options list]
 Transport companies, transit lines, vehicle types (train/bus/ship/plane/...), payment methods, number of stops, route length (time, distance), number of transfers, time between transfers, route path, ticket availability,
