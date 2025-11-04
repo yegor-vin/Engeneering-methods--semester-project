@@ -8,7 +8,21 @@ List features available for KaiOS (due to high system limitations)
 List user-editable items
 
 [Filter options list]
-Transport companies, transit lines, vehicle types (train/bus/ship/plane/...), payment methods, number of stops, route length (time, distance), number of transfers, time between transfers, route path, ticket availability,
+Transport companies -- [exclude|include [priority-global if breached]] [preferred(priority-local)]
+transit lines -- [exclude|include [priority-global if breached]]
+vehicle types (train/bus/ship/plane/...) -- [exclude|include [priority-global if breached]] [preferred(priority-local)]
+payment methods -- [require|require if known [priority-global if breached]] [preferred(priority-local)]
+number of stops -- [min|max [priority-global if breached]]
+minimize stops -- priority-global
+pass via (stops/places - CONFLICT WITH ROUTE PATH) -- [place 1 [priority-local if breached|required] [place 2 [priority-local if breached|required]]... [priority-global if required breached|priority-global if optional only breached]
+route length (time/distance/maximize one) -- [[min] [max]]|[maximize time up to(distance/time)|maximize distance up to(distance/time)] [priority-global|priority-global if min/max breached]
+number of transfers -- max [priority-global if breached]
+minimize transfers -- priority-global
+time between transfers -- [[min] [max] [[min per 100m] [max per 100m]]]
+distance between transfers -- [min] [max]
+minimize walking distance -- priority-global
+route path (approximate - from map - CONFLICT WITH PASS VIA) -- priority-global
+ticket availability (auto discard if full) -- [class [priority-local if breached|required]] [maximize emptiness [priority-local]] [priority-globa]
 
 [KaiOS]
 Simple online route search only - these are weak devices that can at best use primitive web apps
@@ -16,3 +30,7 @@ Simple online route search only - these are weak devices that can at best use pr
 [User-editable items]
 Routes (times, stops, does not exist, new)
 Line route (if differs (manual, GNSS))
+
+[Text - Handling of filter data]
+1. Filter out excluded options from selection pool OR include included data into selection pool (whichever option was used) - applicable to 
+2. 
