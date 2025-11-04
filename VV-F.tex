@@ -1,3 +1,4 @@
+
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
@@ -8,130 +9,98 @@
 \usepackage{booktabs}
 
 \title{VV-F: Material Intent of the Project \\ Open-Source, Privacy-First Transit Route Planner with Offline Support}
-\author{<To be completed: Organization Name>}
+\author{Student Team -- 1st Year University Project}
 \date{\today}
 
 \begin{document}
 \maketitle
+\tableofcontents
+\newpage
+
 \section{Excellence}
 
 \subsection{1.1 Project Objectives and Innovation}
-This project aims to design and implement an open-source, privacy-first public transit route planner that provides offline functionality and extended platform support (Android, iOS, postmarketOS, KaiOS where feasible). Unlike closed commercial solutions, which often collect user data and rely on proprietary servers~\cite{google_privacy}, our application emphasises transparency, user control of data, and reusability of components. The application enables granular, multi-criteria pre-planning of transit routes (line/operator selection, vehicle type, number of transfers, transfer waiting times, payment methods, route length in time/distance, etc.), supports iterative refinement of results, and provides limited offline operation for features that do not require live vehicle positions or real-time updates.
+This project proposes the creation of an open-source, privacy-first public transit route planner that functions both online and offline, with extended platform support (Android, iOS, and mobile Linux distributions such as postmarketOS). The system will focus on ethical data handling, transparency, and accessibility, distinguishing it from commercial solutions like Google Maps that depend on centralized data collection and user tracking~\cite{google_privacy}.
 
-The innovation lies in combining: (1) highly-configurable multi-criteria routing, (2) practical offline routing packages that are storage-efficient, and (3) broad platform support including mobile Linux distributions and feature-phone platforms. The project leverages open standards (GTFS, GTFS-RT where available) and open map data (OpenStreetMap) to ensure verifiability and community-driven improvement~\cite{osm_completeness,mapbox_offline}.
+The project allows users to plan routes based on multiple parameters — type of vehicle, number of transfers, preferred transit company, estimated duration, and route length — while maintaining offline capability for all features that do not require real-time updates. Its open-source nature encourages reuse, transparency, and community contributions, enabling independent verification that no user data is collected or monetized.
 
-\textbf{Measurable objectives:}
+\textbf{Key measurable objectives:}
 \begin{itemize}
-  \item Deliver functional prototype clients for at least three platforms (Android, iOS, and one mobile Linux distribution).
-  \item Achieve at least \textbf{95\%} agreement with official timetable-based routes for selected pilot regions, measured against authoritative GTFS schedule data.
-  \item Provide offline map and routing coverage for \textbf{90\%} of the pilot-region transit network within practical download size limits (e.g., <500~MB).
-  \item Ensure default privacy: no personal location traces are uploaded to third-party servers; telemetry is opt-in and documented.
-  \item Publish at least three reusable components under an OSI-compatible license (e.g., MIT) and maintain a public code repository for community contributions.
+  \item Develop a working prototype for at least one mobile platform.
+  \item Achieve at least 85\% routing accuracy when compared to existing online tools, such as Google Maps or Mapy.cz.
+  \item Provide full offline map and route planning for at least one pilot area.
+  \item Release the full source code under an open-source license.
+  \item Create basic project documentation to enable others to test, use, or improve the application.
 \end{itemize}
+
+Although the team lacks prior experience, the project is designed as a learning-oriented initiative. Its purpose is to develop technical, research, and teamwork skills while contributing a small but functional open-source mobility solution.
 
 \subsection{1.2 Methodology}
-The project adopts an iterative and incremental development model. Initial work packages focus on data ingestion (GTFS parsing, OSM enrichment), offline graph generation, and a lightweight routing engine optimized for mobile devices. Client applications will use native or cross-platform toolkits, with care to keep offline resource usage minimal (vector tiles, compressed graph formats).
+The development process follows an iterative and incremental approach. The team will begin by studying open data standards such as GTFS (General Transit Feed Specification) and OpenStreetMap (OSM)~\cite{osm_completeness}. Early milestones focus on understanding the data formats, developing simple import and routing functions, and gradually extending features to include user preferences and offline storage.
 
-Validation strategy:
-\begin{itemize}
-  \item \textbf{Correctness:} Compare generated itineraries with GTFS-specified schedules and with reference online services in pilot regions.
-  \item \textbf{Performance:} Benchmark route computation time and memory footprint on representative low-end devices.
-  \item \textbf{Usability:} Conduct pilot user studies and structured surveys to measure satisfaction and task completion rates.
-  \item \textbf{Privacy audit:} External or independent review of telemetry and data flows to confirm no unintended collection of personal data.
-\end{itemize}
+Testing and evaluation will rely on comparing generated routes with official public transport timetables and known commercial apps. Progress will be tracked through Git version control, ensuring transparency and documentation of development steps.
 
-Development will use continuous integration, automated tests, and reproducible packaging for offline data. Community engagement and early open releases will enable external validation and feature contributions.
+\subsection{1.3 Research Team and Learning Goals}
+The project is conducted by a small group of four first-year university students. None of the team members have prior experience with large-scale software or applied research, making this project primarily an educational and exploratory effort. Each student will be responsible for one key domain — such as data processing, mobile interface, system architecture, or documentation.
 
-\subsection{1.3 Research Team Excellence and Capacity}
-The project is led by the Principal Investigator (PI) responsible for overall management, technical decisions, and dissemination. The core team includes software engineers, GIS/data specialists, and early-career researchers who will implement, test, and document system components. Young researchers (students and <35 R\&D personnel) will be actively involved in development, testing, and dissemination activities, contributing to capacity building.
-
-\textbf{Representative applied outputs of the PI (last 5 years):}
-\begin{enumerate}
-  \item Open-source environmental monitoring platform (2022) — deployed in regional pilots.
-  \item Study on privacy-preserving mobile services (2021) — conference paper and open dataset.
-  \item Community mobility dashboard (2020) — local government uptake in pilot region.
-  \item Contributions to open routing software (2019--2023) — modules and patches.
-  \item Teaching and outreach workshops on ethical software design (2023--2024).
-\end{enumerate}
-
-\newpage
-\textbf{Selected projects (last 5 years):}
-\begin{longtable}{p{6cm}p{4cm}p{3cm}p{3cm}}
-\toprule
-\textbf{Project title} & \textbf{Funding scheme} & \textbf{Period} & \textbf{Budget (EUR)} \\
-\midrule
-Privacy-Aware Mobile Navigation Tools & National Applied Research & 2022--2024 & 180,000 \\
-Open Mobility Data Hub & European Open Data Initiative & 2020--2023 & 250,000 \\
-Sustainable Transit Analytics & University Grant & 2019--2021 & 90,000 \\
-\bottomrule
-\end{longtable}
-
-The team’s combination of applied software engineering experience and community collaboration demonstrates readiness to deliver the project outcomes.
+While there is no formal Principal Investigator in the traditional research sense, the group operates collaboratively, with each member contributing equally. The work is guided by academic supervisors who provide methodological advice but allow full independence in implementation. The project’s main strength lies in the students’ motivation to learn, collaborate, and contribute meaningfully to open-source development.
 
 \section{Impact}
 
-\subsection{2.1 Expected Contributions to Knowledge, Technology and Society}
-The project will deliver several measurable contributions:
+\subsection{2.1 Expected Impact and Benefits}
+Despite its modest scale, the project can generate measurable academic and social value. Its open-source nature ensures transparency and educational reuse by other students or developers. The resulting application prototype will demonstrate that even beginner teams can contribute to practical, privacy-respecting software.
+
+\textbf{Expected impacts:}
 \begin{itemize}
-  \item \textbf{Technical:} Reusable open-source modules for offline packaging, map rendering, and multi-criteria routing that can be integrated into other projects and services.
-  \item \textbf{Scientific:} Documentation and reproducible experiments on routing correctness and offline strategies, contributing empirical evidence to the field of applied mobility informatics.
-  \item \textbf{Economic:} Reduced reliance on proprietary mapping APIs and potential cost savings for municipalities and NGOs deploying custom transit tools.
-  \item \textbf{Social / Environmental:} Improved accessibility to public transit information in offline or low-connectivity contexts, potentially encouraging public transport use and reducing car dependency.
-  \item \textbf{Educational:} Hands-on training for students and junior researchers in geospatial software development and privacy-aware design.
+  \item \textbf{Educational:} The team members gain practical experience with applied research and software development tools.
+  \item \textbf{Scientific:} The project documents a case study in open-source, non-commercial software design for mobility planning.
+  \item \textbf{Social:} Provides a transparent, data-respecting alternative to proprietary routing systems.
+  \item \textbf{Technical:} Produces reusable open-source components that others may extend or integrate into their own projects.
 \end{itemize}
 
-\subsection{2.2 Utilisation and Dissemination of Results}
-The primary dissemination channels will be:
-\begin{itemize}
-  \item Open-source repositories (GitHub/GitLab) with clear licensing and contribution guidelines.
-  \item Publications in relevant conferences and journals (software engineering, GIS, transport research).
-  \item Workshops and hackathons targeting students, local authorities, and open-data communities.
-  \item A project website hosting documentation, downloads, and datasets.
-\end{itemize}
+The project also contributes to awareness about data privacy in public digital services and encourages students to adopt ethical principles in technology design.
 
-Measures to maximise impact include early releases, active community engagement, and collaboration with local transit authorities for pilot deployments.
+\subsection{2.2 Dissemination of Results}
+All project outputs — source code, documentation, and datasets — will be published publicly in a GitHub repository under an open license. A small project website will host the compiled app and explain the goals, methodology, and ethical principles. Dissemination will occur mainly within the university environment and through open-source communities.
+
+If successful, the team plans to present the project at student technology fairs or conferences focused on open software and digital privacy.
 
 \section{Implementation}
 
-\subsection{3.1 Work Packages, Deliverables and Schedule}
-The project is planned for 24 months and divided into the following work packages (WPs):
+\subsection{3.1 Work Plan and Milestones}
+The project is planned for a total duration of 12 months and divided into the following work packages (WPs):
 
-\begin{longtable}{p{1.5cm}p{4.5cm}p{7cm}p{2.5cm}}
+\begin{longtable}{p{1.5cm}p{4cm}p{7.5cm}p{2.5cm}}
 \toprule
 \textbf{WP} & \textbf{Title} & \textbf{Main tasks and deliverables} & \textbf{Duration} \\
 \midrule
-WP1 & Data acquisition and integration & Collect GTFS feeds, enrich OSM data, implement parsers, produce offline graph & Months 1--6 \\
-WP2 & Offline packaging and routing core & Build lightweight routing engine, offline packager, compression strategy & Months 4--10 \\
-WP3 & Cross-platform clients & Implement Android, iOS and postmarketOS clients; UI/UX testing & Months 8--14 \\
-WP4 & Pilot deployment and evaluation & Deploy pilots, run user studies, collect feedback & Months 13--20 \\
-WP5 & Dissemination and project closure & Documentation, code release, workshops, final reports & Months 18--24 \\
+WP1 & Research and data preparation & Study GTFS and OSM standards; gather test datasets; prepare basic data import scripts & Months 1--3 \\
+WP2 & Routing prototype & Implement basic routing algorithm using open data; verify route correctness & Months 4--6 \\
+WP3 & User interface and offline support & Develop a simple user interface and test offline operation on at least one platform & Months 7--9 \\
+WP4 & Evaluation and documentation & Compare prototype with commercial apps; write documentation; publish results & Months 10--12 \\
 \bottomrule
 \end{longtable}
 
-Key deliverables include: offline data packages, platform clients, reusable modules, pilot reports, and open documentation.
+\subsection{3.2 Project Management and Risks}
+The team will manage tasks collaboratively using online tools such as Git and shared documentation platforms. Decisions are made collectively, promoting equal participation. Academic mentors may provide limited supervision and consultation.
 
-\subsection{3.2 Project Management, Governance and Quality Assurance}
-The PI will chair regular steering meetings and maintain a public issue tracker for the project repository. A lightweight governance model will define roles (PI, technical lead, QA lead, outreach lead) and decision procedures. Quality assurance includes unit and integration tests, CI pipelines, and external code reviews for major releases.
-
-\newpage
-\subsection{3.3 Risk Analysis}
+\textbf{Identified risks:}
 \begin{longtable}{p{4.5cm}p{9cm}}
 \toprule
-\textbf{Risk} & \textbf{Description} \\
+\textbf{Risk} & \textbf{Description and Mitigation} \\
 \midrule
-Technical integration & Heterogeneous GTFS and regional schedule formats may require custom parsers and validation. \\
-Data completeness & Some regions lack complete GTFS or high-quality OSM coverage, reducing route accuracy. \\
-Team experience & Core team members are early-career and have limited production-grade experience, which may slow initial progress. \\
-Funding shortfall & Insufficient budget for hosting, devices, or external audits may delay activities. \\
-User adoption & Difficulty in achieving sufficient pilot users to validate features at scale. \\
+Lack of experience & The team has no prior project experience, which may slow progress. Mitigation: learning from open-source examples, tutorials, and mentor advice. \\
+Time management & Balancing studies and project work may affect delivery. Mitigation: weekly planning and task division. \\
+Technical complexity & Some features (e.g., offline routing) may exceed skill level. Mitigation: start simple and focus on core functionality first. \\
+Data quality & Open datasets may contain errors or gaps. Mitigation: focus testing on small, well-documented areas. \\
 \bottomrule
 \end{longtable}
 
-\subsection{3.4 Budget Justification}
-The budget will focus on personnel (developers, data engineers, QA), modest hardware for testing and packaging, hosting for repositories and pilot services, and dissemination (workshops, travel). A contingency reserve (~10\%) is planned for unforeseen costs. Detailed budget tables are provided in the VV-C form.
+\subsection{3.3 Budget and Resources}
+The project requires minimal funding — mostly for basic hardware (e.g., shared testing devices), internet hosting for code repositories, and potential small-scale dissemination (e.g., university presentations). No external commercial software licenses are needed.
 
-\subsection{3.5 Infrastructure and Institutional Capacity}
-The applicant organization provides development servers, build infrastructure, and access to testing devices. Collaboration agreements with local transit authorities and open-data communities are planned to facilitate pilot data access and validation.
+\subsection{3.4 Institutional Support}
+The project will be conducted under the supervision of the university’s department of applied informatics, which provides computing infrastructure, consultation, and academic guidance. The environment encourages student-led initiatives, open collaboration, and independent research.
 
 \newpage
 \bibliographystyle{plain}

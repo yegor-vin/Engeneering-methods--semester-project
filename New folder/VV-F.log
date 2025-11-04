@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  4 NOV 2025 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  4 NOV 2025 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -253,24 +253,24 @@ File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 ) (VV-F.aux)
 \openout1 = `VV-F.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -332,26 +332,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 14.
  (VV-F.out) (VV-F.out)
 \@outlinefile=\write3
 \openout3 = `VV-F.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 17.
+(Font)              <14.4> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
- (VV-F.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
-)
-\tf@toc=\write4
-\openout4 = `VV-F.toc'.
-
+(Font)              <7> on input line 16.
 
 
 [1
@@ -359,48 +348,82 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {C:/Users/anhkh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
-[]|\OT1/cmr/m/n/12 Research and data
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+[]|\OT1/cmr/bx/n/12 Budget
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 80--80
-[]|\OT1/cmr/m/n/12 Compare pro-to-type with com-mer-cial
+Underfull \hbox (badness 3861) in paragraph at lines 63--63
+[]|\OT1/cmr/m/n/12 Privacy-Aware Mo-bile Nav-i-ga-
  []
 
 
-Overfull \hbox (33.77357pt too wide) in alignment at lines 73--82
+Overfull \hbox (47.99995pt too wide) in alignment at lines 59--67
  [] [] [] [] 
  []
 
+
+
 [3]
+Underfull \hbox (badness 4582) in paragraph at lines 103--103
+\OT1/cmr/m/n/12 im-ple-ment parsers, pro-duce of-fline
+ []
 
-[4] (VV-F.bbl)
 
-[5] (VV-F.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
+[]|\OT1/cmr/m/n/12 Offline pack-ag-ing and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+[]|\OT1/cmr/m/n/12 Pilot de-ploy-ment and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]|\OT1/cmr/m/n/12 Dissemination and
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 107--107
+[]|\OT1/cmr/m/n/12 Documentation, code re-lease, work-
+ []
+
+
+Overfull \hbox (33.77357pt too wide) in alignment at lines 99--109
+ [] [] [] [] 
+ []
+
+
+
+[4]
+
+[5] (VV-F.bbl)
+
+[6] (VV-F.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `VV-F.out' has not changed.
-(rerunfilecheck)             Checksum: 767EAB97819FB313DF1DBCC6F8CB9A6A;2170.
+(rerunfilecheck)             Checksum: BB3293B4D286B20B38BBBC1639726141;2906.
  ) 
 Here is how much of TeX's memory you used:
- 9138 strings out of 468130
- 143323 string characters out of 5430633
- 563124 words of memory out of 5000000
- 37649 multiletter control sequences out of 15000+600000
- 632330 words of font info for 58 fonts, out of 8000000 for 9000
+ 9127 strings out of 468130
+ 143142 string characters out of 5430633
+ 563220 words of memory out of 5000000
+ 37639 multiletter control sequences out of 15000+600000
+ 629892 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,494b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,856b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\anhkh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/anhkh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmr12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmr17.pfb>
-Output written on VV-F.pdf (5 pages, 76065 bytes).
+Output written on VV-F.pdf (6 pages, 81880 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
