@@ -2,11 +2,17 @@
 Describe handling of filter data - order will be used for diagram
 Describe source for map data
 Describe handling of offline data updates
+Describe handling of user-edited content
 List out filter options (not part of the text)
 List features available for KaiOS (due to high system limitations)
+List user-editable items
 
 [Filter options list]
 Transport companies, transit lines, vehicle types (train/bus/ship/plane/...), payment methods, number of stops, route length (time, distance), number of transfers, time between transfers, route path, ticket availability,
 
 [KaiOS]
 Simple online route search only - these are weak devices that can at best use primitive web apps
+
+[User-editable items]
+Routes (times, stops, does not exist, new)
+Line route (if differs (manual, GNSS))
