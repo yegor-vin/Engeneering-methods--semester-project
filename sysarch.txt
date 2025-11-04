@@ -1,7 +1,6 @@
 [TODO]
 Describe handling of filter data
 Describe meaning of each filter option
-Describe source for map data
 Create diagram for data update handling
 Create diagram for filter option handling
 
@@ -35,6 +34,9 @@ Simple online route search only - these are weak devices that can at best use pr
 [User-editable items]
 Routes (times, stops, does not exist, new)
 Line route (if differs (manual, GNSS))
+
+[Map data source]
+OpenStreetMap in snapshots similar to CoMaps, which currently takes them once or twice a month. As of writing, the map of Slovakia is only 347MB in CoMaps.
 
 [Text - Handling of filter data]
 1. Filter pool of options based on mandatory options (options excluding priority)
