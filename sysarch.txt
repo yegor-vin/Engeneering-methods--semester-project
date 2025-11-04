@@ -7,3 +7,6 @@ List features available for KaiOS (due to high system limitations)
 
 [Filter options list]
 Transport companies, transit lines, vehicle types (train/bus/ship/plane/...), payment methods, number of stops, route length (time, distance), number of transfers, time between transfers, route path, ticket availability,
+
+[KaiOS]
+Simple online route search only - these are weak devices that can at best use primitive web apps
