@@ -1,5 +1,6 @@
 [TODO]
 Describe handling of filter data
+Describe meaning of each filter option
 Describe source for map data
 Create diagram for data update handling
 Create diagram for filter option handling
