@@ -2,6 +2,8 @@
 Describe handling of filter data
 Describe source for map data
 List user-editable items
+Create diagram for data update handling
+Create diagram for filter option handling
 
 [Other features]
 Live vehicle position
