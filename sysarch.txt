@@ -1,7 +1,6 @@
 [TODO]
 Describe handling of filter data
 Describe meaning of each filter option
-Create diagram for data update handling
 Create diagram for filter option handling
 
 [Other features]
