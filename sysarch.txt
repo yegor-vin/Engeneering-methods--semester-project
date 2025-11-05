@@ -27,6 +27,22 @@ minimize walking distance -- priority-global
 route path (approximate - from map - CONFLICT WITH PASS VIA) -- priority-global
 ticket availability (auto discard if full) -- [class [priority-local if breached]] [maximize emptiness [priority-local]] [priority-globa]
 
+[Filter options "syntax"]
+Not really following anything specific, just multiple things combined together.
+| - splits mutually exclusive options
+[option] - optional option
+[option1 [option2]] - option1 is optional, option2 is optional option to option1
+CONFLICT WITH - mutually exclusive with named filter option(s)
+priority-local - priority of sub-option within single filter option
+priority-global - priority accross all primary filter options
+filter (text) - text is basically a comment, may list intended uses/options
+sublist(priority-local) - list of sub-options where each sub-option accepts separate priority
+priority-* if breached - set priority if related conditions cannot be met
+
+[Filter options textual definitions]
+Start + Destination = Self descriptive
+Time = Time of either departure or arrival
+
 [KaiOS]
 Simple online route search only - these are weak devices that can at best use primitive web apps
 
