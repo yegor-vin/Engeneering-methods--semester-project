@@ -1,2 +1,2 @@
 # About diagrams
-Created using Umbrella (came by default with KDE)
+Created using Umbrello (came by default with KDE)
