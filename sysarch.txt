@@ -11,9 +11,9 @@ Navigation
 [Filter options list]
 Start + Destination
 Time - departure|arrival
-Transport companies -- [exclude|include [priority-global if breached]] [preferred(priority-local)]
+Transport companies -- [exclude|include [priority-global if breached]] [preferred(priority-local) priority-global]
 transit lines -- [exclude|include [priority-global if breached]]
-vehicle types (train/bus/ship/plane/...) -- [exclude|include [priority-global if breached]] [preferred(priority-local)]
+vehicle types (train/bus/ship/plane/...) -- [exclude|include [priority-global if breached]] [preferred(priority-local) priority-global]
 payment methods -- [require|require if known [priority-global if breached]] [preferred(priority-local)]
 number of stops -- [min|max [priority-global if breached]]
 minimize stops -- priority-global
@@ -27,6 +27,13 @@ minimize walking distance -- priority-global
 route path (approximate - from map - CONFLICT WITH PASS VIA) -- priority-global
 ticket availability (auto discard if full) -- [class [priority-local if breached]] [maximize emptiness [priority-local]] [priority-globa]
 
+[Filter options textual definitions]
+Start + Destination = Self descriptive
+Time = Time of either departure or arrival
+Transport companies = List of transport companies. Include is a whitelist option, exclude is blacklist. "priority-global if breached" sets priority accross all filter options if the list of companies cannot be met. Leaving this out makes the options firm - i.e.: exclude or include list must be met. "preferred" is a list of companies to prefer over others if possible. If prior exclude/include was used, preferred operates with this list, otherwise operates with list of all transport companies. If multiple companies are listed, "priority-local" sets priority of each company within the "preferred" list. With preferred list, default priority-global (may get overriden by "if breached") must be specified to define priority above/below other options.
+Transit lines = List of lines (e.g.: OS 3039) to include (whitelist) or exclude (blacklist). Optional "priority-global if breached" sets filter option priority if conditions cannot be met, if not included, the options must be met.
+Vehicle types = Exclude (blacklist) or include (whitelist) specific types of public transport like trains or buses, optional "priority-global if breached" sets global filter priority if conditions cannot be met, otherwise the lists must be met. "preferred" lists transit types to prefer with their respective "priority-local" value, and may be combined with prior exclude/include, otherwise operates with all types by default. For example, preferred list may be used to prefer trams over buses. With preferred list, default priority-global (may get overriden by "if breached") must be specified to define priority above/below other options.
+
 [Filter options "syntax"]
 Not really following anything specific, just multiple things combined together.
 | - splits mutually exclusive options
@@ -38,10 +45,6 @@ priority-global - priority accross all primary filter options
 filter (text) - text is basically a comment, may list intended uses/options
 sublist(priority-local) - list of sub-options where each sub-option accepts separate priority
 priority-* if breached - set priority if related conditions cannot be met
-
-[Filter options textual definitions]
-Start + Destination = Self descriptive
-Time = Time of either departure or arrival
 
 [KaiOS]
 Simple online route search only - these are weak devices that can at best use primitive web apps
