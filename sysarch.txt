@@ -15,7 +15,7 @@ Transport companies -- [exclude|include [priority-global if breached]] [preferre
 transit lines -- [exclude|include [priority-global if breached]]
 vehicle types (train/bus/ship/plane/...) -- [exclude|include [priority-global if breached]] [preferred(priority-local) priority-global]
 payment methods -- preferred(priority-local) priority-global [required|required if known [priority-global if breached]]
-number of stops -- [min|max [priority-global if breached]]
+maximum number of middle stops -- value [priority-global if breached]
 minimize stops -- priority-global
 pass via (stops/places - CONFLICT WITH ROUTE PATH) -- [place 1 [priority-local if breached] [place 2 [priority-local if breached]]... [priority-global if required breached|priority-global if optional only breached]
 route length (time/distance/maximize one) -- [[min] [max]]|[maximize time up to(distance/time)|maximize distance up to(distance/time)] [priority-global|priority-global if min/max breached]
@@ -33,7 +33,8 @@ Time = Time of either departure or arrival
 Transport companies = List of transport companies. Include is a whitelist option, exclude is blacklist. "priority-global if breached" sets priority accross all filter options if the list of companies cannot be met. Leaving this out makes the options firm - i.e.: exclude or include list must be met. "preferred" is a list of companies to prefer over others if possible. If prior exclude/include was used, preferred operates with this list, otherwise operates with list of all transport companies. If multiple companies are listed, "priority-local" sets priority of each company within the "preferred" list. With preferred list, default priority-global (may get overriden by "if breached") must be specified to define priority above/below other options.
 Transit lines = List of lines (e.g.: OS 3039) to include (whitelist) or exclude (blacklist). Optional "priority-global if breached" sets filter option priority if conditions cannot be met, if not included, the options must be met.
 Vehicle types = Exclude (blacklist) or include (whitelist) specific types of public transport like trains or buses, optional "priority-global if breached" sets global filter priority if conditions cannot be met, otherwise the lists must be met. "preferred" lists transit types to prefer with their respective "priority-local" value, and may be combined with prior exclude/include, otherwise operates with all types by default. For example, preferred list may be used to prefer trams over buses. With preferred list, default priority-global (may get overriden by "if breached") must be specified to define priority above/below other options.
-Payment methods = 
+Payment methods = "preferred" is a list of payment options to prefer with their respective priority-local (within the list). priority-global is required to set importance of payment options list. Option "required" will make these options always required, "required if known" only if the available payment options are known for the specific transport company. Priority global if breached overrides previously set priority-global if prior requirement conditions cannot be met. Omiting this option makes the requirements necessary to be met.
+
 
 [Filter options "syntax"]
 Not really following anything specific, just multiple things combined together.
