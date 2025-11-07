@@ -18,7 +18,7 @@ payment methods -- preferred(priority-local) priority-global [required|required 
 maximum number of middle stops -- value [priority-global if breached]
 minimize stops -- priority-global
 pass via (stops/places - CONFLICT WITH ROUTE PATH) -- [place1 [priority-local if breached] [place2 [priority-local if breached]]... [priority-global if required breached|priority-global if optional only breached]
-route length (time/distance/maximize one) -- [[min] [max]]|[maximize time up to(distance/time)|maximize distance up to(distance/time)] [priority-global|priority-global if min/max breached]
+route length (time/distance/maximize one) -- [[min] [max] [priority global if min/max breached]]|[maximize time up to(distance/time)|maximize distance up to(distance/time)]
 number of transfers -- max [priority-global if breached]
 minimize transfers -- priority-global
 time between transfers -- [[min] [max] [[min per 100m] [max per 100m]]]
@@ -37,7 +37,8 @@ Payment methods = "preferred" is a list of payment options to prefer with their 
 Maximum number of middle stops = "value" sets the maximum number of stops between departure point and destination. As usual, "priority global if breached" sets the importance of this options if the condition cannot be met, and makes the value optional.
 Minimize stops = Try to get minimum number of middle stops. priority-global sets importance of minimization.
 Pass via = A list of stops or places to (try to) pass through. This option conflicts with map route path (i.e.: both can't be used at once). "placen" lists a place to pass through. "priority-local if breached" sets the importance within this list of pllaces, and makes the place optional. "priority-global if required breached" sets importance of pass via if a required option cannot be met, "priority-global if optional only breached" sets importance if only optional places (i.e.: those with "priority-local if breached" value set) were not met.
-
+Route length = For min/max time or distance may be chosen. Min/max are mutually exclusive with the "maximize x up to" options. "maximize time up to(distance/time)" tries to maximize time in vehicles up to
+ given distance or time and "maximize distance up to(distance/time)" does same but with distance
 
 [Filter options "syntax"]
 Not really following anything specific, just multiple things combined together.
