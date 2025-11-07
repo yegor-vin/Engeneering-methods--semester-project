@@ -14,7 +14,7 @@ Time - departure|arrival
 Transport companies -- [exclude|include [priority-global if breached]] [preferred(priority-local) priority-global]
 transit lines -- [exclude|include [priority-global if breached]]
 vehicle types (train/bus/ship/plane/...) -- [exclude|include [priority-global if breached]] [preferred(priority-local) priority-global]
-payment methods -- [require|require if known [priority-global if breached]] [preferred(priority-local) priority-global]
+payment methods -- preferred(priority-local) priority-global [required|required if known [priority-global if breached]]
 number of stops -- [min|max [priority-global if breached]]
 minimize stops -- priority-global
 pass via (stops/places - CONFLICT WITH ROUTE PATH) -- [place 1 [priority-local if breached] [place 2 [priority-local if breached]]... [priority-global if required breached|priority-global if optional only breached]
