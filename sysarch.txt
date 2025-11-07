@@ -17,7 +17,7 @@ vehicle types (train/bus/ship/plane/...) -- [exclude|include [priority-global if
 payment methods -- preferred(priority-local) priority-global [required|required if known [priority-global if breached]]
 maximum number of middle stops -- value [priority-global if breached]
 minimize stops -- priority-global
-pass via (stops/places - CONFLICT WITH ROUTE PATH) -- [place 1 [priority-local if breached] [place 2 [priority-local if breached]]... [priority-global if required breached|priority-global if optional only breached]
+pass via (stops/places - CONFLICT WITH ROUTE PATH) -- [place1 [priority-local if breached] [place2 [priority-local if breached]]... [priority-global if required breached|priority-global if optional only breached]
 route length (time/distance/maximize one) -- [[min] [max]]|[maximize time up to(distance/time)|maximize distance up to(distance/time)] [priority-global|priority-global if min/max breached]
 number of transfers -- max [priority-global if breached]
 minimize transfers -- priority-global
@@ -34,6 +34,9 @@ Transport companies = List of transport companies. Include is a whitelist option
 Transit lines = List of lines (e.g.: OS 3039) to include (whitelist) or exclude (blacklist). Optional "priority-global if breached" sets filter option priority if conditions cannot be met, if not included, the options must be met.
 Vehicle types = Exclude (blacklist) or include (whitelist) specific types of public transport like trains or buses, optional "priority-global if breached" sets global filter priority if conditions cannot be met, otherwise the lists must be met. "preferred" lists transit types to prefer with their respective "priority-local" value, and may be combined with prior exclude/include, otherwise operates with all types by default. For example, preferred list may be used to prefer trams over buses. With preferred list, default priority-global (may get overriden by "if breached") must be specified to define priority above/below other options.
 Payment methods = "preferred" is a list of payment options to prefer with their respective priority-local (within the list). priority-global is required to set importance of payment options list. Option "required" will make these options always required, "required if known" only if the available payment options are known for the specific transport company. Priority global if breached overrides previously set priority-global if prior requirement conditions cannot be met. Omiting this option makes the requirements necessary to be met.
+Maximum number of middle stops = "value" sets the maximum number of stops between departure point and destination. As usual, "priority global if breached" sets the importance of this options if the condition cannot be met, and makes the value optional.
+Minimize stops = Try to get minimum number of middle stops. priority-global sets importance of minimization.
+Pass via = A list of stops or places to (try to) pass through. This option conflicts with map route path (i.e.: both can't be used at once). "placen" lists a place to pass through. "priority-local if breached" sets the importance within this list of pllaces, and makes the place optional. "priority-global if required breached" sets importance of pass via if a required option cannot be met, "priority-global if optional only breached" sets importance if only optional places (i.e.: those with "priority-local if breached" value set) were not met.
 
 
 [Filter options "syntax"]
