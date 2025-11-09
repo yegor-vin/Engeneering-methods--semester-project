@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{osm_completeness}
+Completeness - openstreetmap wiki.
+\newblock OpenStreetMap Wiki, 2025.
+\newblock Accessed 2025-11-02.
+
+\bibitem{google_privacy}
+Privacy \& terms - google.
+\newblock Google Privacy Policy, 2025.
+\newblock Accessed 2025-11-02.
+
+\bibitem{opensource_learning}
+Red~Hat Academy.
+\newblock Open source as a learning platform for students.
+\newblock \url{https://www.redhat.com/en/open-source-stories}, 2022.
+\newblock Accessed 2025-11-04.
+
+\bibitem{gdpr_framework}
+European Commission.
+\newblock Eu general data protection regulation (gdpr): Framework for data
+  privacy in digital services.
+\newblock {\em Official Journal of the European Union}, 2018.
+\newblock Regulation (EU) 2016/679.
+
+\bibitem{nlnet_case_study}
+NLnet Foundation.
+\newblock Nlnet case study on open-source mobility tools.
+\newblock \url{https://nlnet.nl/project/OpenMobility/}, 2023.
+\newblock Accessed 2025-11-04.
+
+\bibitem{gtfs_spec}
+{Google Developers}.
+\newblock General transit feed specification (gtfs).
+\newblock \url{https://developers.google.com/transit/gtfs}, 2023.
+\newblock Accessed 2025-11-04.
+
+\bibitem{opensource_values}
+Open~Source Initiative.
+\newblock Open source initiative: Core values of open collaboration.
+\newblock \url{https://opensource.org/osd}, 2023.
+\newblock Accessed 2025-11-04.
+
+\bibitem{opensource_dissemination}
+OpenAIRE.
+\newblock Best practices for dissemination of open research outputs.
+\newblock \url{https://www.openaire.eu/open-science-guide}, 2024.
+\newblock Accessed 2025-11-04.
+
+\bibitem{osm_wiki}
+{OpenStreetMap Contributors}.
+\newblock Openstreetmap wiki.
+\newblock \url{https://wiki.openstreetmap.org/wiki/Main_Page}, 2024.
+\newblock Accessed 2025-11-04.
+
+\bibitem{foss_impact}
+OECD Digital~Economy Papers.
+\newblock Impact of free and open source software on innovation.
+\newblock \url{https://doi.org/10.1787/5jm0m4n7zj5s-en}, 2021.
+\newblock Accessed 2025-11-04.
+
+\bibitem{opensource_budget}
+Linux~Foundation Research.
+\newblock Cost efficiency in open source development projects.
+\newblock \url{https://www.linuxfoundation.org/research}, 2023.
+\newblock Accessed 2025-11-04.
+
+\end{thebibliography}
