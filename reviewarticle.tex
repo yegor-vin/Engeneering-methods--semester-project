@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{url}
+
+\title{Review Article: Foundations and State of the Art for a Privacy-First, Open-Source Transit Route Planner}
+\author{Student Team -- FIIT STU}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This review article summarizes the theoretical foundations, current knowledge, data standards, routing methodologies, and technological trends relevant to the proposed applied research project: an open-source, privacy-first public transit route planner with offline capabilities. Because the project is developed by a team of first-year students, the article also maps the essential background necessary for understanding route planning systems, evaluating existing solutions, and identifying gaps in the field. It characterizes the problems of centralized data collection in current mobility applications, the role of open data standards such as GTFS and OpenStreetMap, and modern routing approaches for multimodal networks. The article further identifies opportunities for open-source, transparent, and minimal-data mobility tools, which form the basis for the project's implementation.
+\end{abstract}
+
+\section{Introduction}
+Public transit navigation systems have become essential digital tools for mobility. Platforms such as Google Maps and commercial routing engines provide real-time trip planning, but most rely on centralized infrastructures, continuous data collection, and user tracking practices that raise privacy concerns~\cite{google_privacy}. At the same time, the availability of standardized transit datasets, open-source maps, and lightweight routing algorithms has expanded significantly. This creates an opportunity for developing alternative mobility applications that do not depend on large-scale data aggregation, while still offering practical route planning functionality.
+
+The reviewed literature covers four main domains: (1) open transit data standards, primarily GTFS; (2) open geospatial mapping based on OpenStreetMap; (3) public transport routing algorithms; and (4) open-source development models and their educational and societal implications. These areas provide the conceptual baseline for the project and justify its implementation.
+
+\section{State of Knowledge and Scientific Background}
+
+\subsection{Open Transit Data: GTFS}
+The General Transit Feed Specification (GTFS) is the most widely used format for describing public transport schedules and networks~\cite{gtfs_spec}. GTFS provides a structured representation of stops, routes, trips, and timetables, enabling interoperability between transport agencies and software systems. Because GTFS is openly published by many agencies worldwide, it allows independent developers and researchers to build routing tools without negotiating proprietary access.
+
+Understanding GTFS is critical for any transit-planning application, as it defines the core input required to compute connections, transfer possibilities, and travel times.
+
+\subsection{Open Geospatial Data: OpenStreetMap}
+OpenStreetMap (OSM) is the primary open-source geospatial database used for rendering maps, determining walkability, and modeling stop-to-stop connectivity~\cite{osm_wiki}. Its community-driven structure makes it continually evolving, but its completeness varies by region~\cite{osm_completeness}. For offline-first applications, OSM is uniquely suitable because the data can be stored locally and processed without external services.
+
+Together, GTFS and OSM form the two foundational datasets for an offline or privacy-respecting route planner.
+
+\subsection{Routing Algorithms in Public Transport}
+Efficient public transport routing is a specialized field of applied algorithmics. Traditional shortest-path algorithms such as Dijkstra's do not directly accommodate scheduled departures, transfers, or multimodal constraints. A comprehensive overview of advanced approaches is given by Delling et~al., who propose station-graph representations and optimized algorithms for multimodal routing with time dependencies~\cite{delling_transit_routing}. These methods illustrate how routing can remain computationally efficient even on mobile devices.
+
+The project draws inspiration from this domain, although its routing implementation will be simplified due to the beginner-level team.
+
+\subsection{Open-Source and Learning Foundations}
+Open-source software development plays a significant role in transparency, verifiability, and community involvement. The Open Source Initiative describes open development as a framework for collaboration and ethical reuse~\cite{opensource_values}. Its educational dimension is supported by programs such as Red Hat Academy, which emphasize open-source as a strong learning environment for novice developers~\cite{opensource_learning}.
+
+Case studies from organizations like NLnet Foundation show that small teams, including student-led groups, can successfully contribute to mobility-related open-source projects when supported by accessible tools and open data~\cite{nlnet_case_study}.
+
+\section{Problem Identification}
+
+\subsection{Privacy Issues in Current Mobility Platforms}
+Major routing platforms rely on remote servers for every route query and frequently store location data for commercial purposes. Google's location tracking practices have been widely criticized, resulting in investigations and regulatory actions concerning user privacy~\cite{google_privacy}. For certain users—especially privacy-conscious individuals, vulnerable groups, or users with limited network access—existing systems do not provide an appropriate alternative.
+
+This creates a clear need for tools that operate offline, process routes locally, and do not store or transmit personal data.
+
+\subsection{Technical Gaps in Existing Open Tools}
+While some open-source routing engines exist, many require server infrastructure, depend on large hardware resources, or assume developer experience that first-year students do not possess. There is a shortage of lightweight, mobile-ready, privacy-focused route planners suitable for small regions.
+
+The project's contribution is therefore not a major scientific breakthrough but a practical demonstration of minimal, transparent, verifiable route planning.
+
+\section{Existing Solutions and Their Limitations}
+Commercial solutions provide high accuracy and broad coverage, but their limitations include:
+\begin{itemize}
+    \item centralization and reliance on proprietary infrastructure,
+    \item storage of user queries and location history,
+    \item limited offline capabilities,
+    \item lack of transparency regarding algorithms and data handling.
+\end{itemize}
+
+Open-source alternatives exist but often require advanced skills or do not support offline routing directly. Therefore, the literature suggests a clear space for small-scale, educational, privacy-first tools.
+
+\section{Relation to the Proposed Project}
+The reviewed sources collectively support the feasibility of the project:
+\begin{itemize}
+    \item GTFS and OSM provide accessible datasets;
+    \item routing research demonstrates achievable algorithmic approaches;
+    \item open-source literature emphasizes transparency and reproducibility;
+    \item privacy analyses justify the need for an offline-first model.
+\end{itemize}
+
+The project builds upon these foundations but simplifies them into a form manageable by a novice student team, focusing on a selected pilot region and a minimal viable routing prototype.
+
+\section{Open Challenges}
+The literature also highlights several open problems relevant to the project:
+\begin{itemize}
+    \item ensuring completeness and consistency of open datasets~\cite{osm_completeness};
+    \item guaranteeing usable performance on mobile hardware;
+    \item creating user interfaces accessible to non-technical audiences;
+    \item balancing simplicity (for learning) with correctness and usability.
+\end{itemize}
+
+These challenges define realistic limitations for the project and suggest future research directions.
+
+\section{Conclusion}
+This article reviewed the fundamental knowledge required for designing a privacy-first, open-source transit route planner. It summarized transit data standards, open mapping frameworks, public transport routing algorithms, and issues related to privacy and open-source development. The existing literature demonstrates both the feasibility and the relevance of such a project—especially as an educational applied research effort. The proposed system fills a gap between fully commercial, centralized platforms and overly complex open-source tools, offering a transparent and user-respecting approach based on accessible technologies.
+
+\bibliographystyle{plain}
+\bibliography{literatura}
+
+\end{document}
