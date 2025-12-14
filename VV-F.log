@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  1 DEC 2025 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  8 DEC 2025 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,7 +397,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [3]
 
 [4]
-Overfull \hbox (0.62029pt too wide) in paragraph at lines 131--132
+Overfull \hbox (0.62029pt too wide) in paragraph at lines 133--134
 []\OT1/cmr/bx/n/12 Social in-no-va-tion: \OT1/cmr/m/n/12 By em-pha-siz-ing pri-
 vacy, open-ness, and ac-ces-si-bil-ity, the project
  []
@@ -407,40 +407,34 @@ vacy, open-ness, and ac-ces-si-bil-ity, the project
 [5]
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 192--192
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
 []|\OT1/cmr/m/n/12 Research and data
  []
 
 
-Underfull \hbox (badness 7759) in paragraph at lines 193--194
+Underfull \hbox (badness 7759) in paragraph at lines 194--195
 []|\OT1/cmr/m/n/12 Months 7--
  []
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 195--195
+Underfull \hbox (badness 2772) in paragraph at lines 196--196
 []|\OT1/cmr/m/n/12 Evaluation and doc-u-
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 195--195
+Underfull \hbox (badness 3229) in paragraph at lines 196--196
 []|\OT1/cmr/m/n/12 Compare pro-to-type with com-mer-cial
  []
 
 
-Overfull \hbox (25.23766pt too wide) in alignment at lines 188--197
+Overfull \hbox (25.23766pt too wide) in alignment at lines 189--198
  [] [] [] [] 
- []
-
-
-Overfull \hbox (7.04854pt too wide) in paragraph at lines 220--222
-[]\OT1/cmr/bx/n/12 Testing de-vices (\TS1/cmr/bx/n/12 ¿\OT1/cmr/bx/n/12 250): \
-OT1/cmr/m/n/12 At least one An-droid phone and one mo-bile Linux{capable
  []
 
 
 
 [7]
-Overfull \hbox (3.02017pt too wide) in paragraph at lines 239--241
+Overfull \hbox (3.02017pt too wide) in paragraph at lines 240--242
 []\OT1/cmr/bx/n/12 Printing and dis-sem-i-na-tion (\TS1/cmr/bx/n/12 ¿\OT1/cmr/b
 x/n/12 100): \OT1/cmr/m/n/12 Costs for pro-duc-ing printed posters, project
  []
@@ -460,15 +454,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--62
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-
-
-Package rerunfilecheck Warning: File `VV-F.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `VV-F.out':
-(rerunfilecheck)             Before: AF68F266A962FE2C25F2DAE7B4953671;3179
-(rerunfilecheck)             After:  A43B52B6FEEEB4C768BC7057C3AC872D;3041.
+Package rerunfilecheck Info: File `VV-F.out' has not changed.
+(rerunfilecheck)             Checksum: 7AF433141670C6B4B0BF8EFCC6F963CB;3013.
  ) 
 Here is how much of TeX's memory you used:
  10607 strings out of 468130
@@ -487,7 +474,7 @@ s/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/anhkh/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/anhkh/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on VV-F.pdf (9 pages, 127557 bytes).
+Output written on VV-F.pdf (9 pages, 127453 bytes).
 PDF statistics:
  213 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)

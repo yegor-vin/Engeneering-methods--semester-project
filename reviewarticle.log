@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  1 DEC 2025 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  1 DEC 2025 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -211,8 +211,7 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 tex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count298
-)
-No file reviewarticle.aux.
+) (reviewarticle.aux)
 \openout1 = `reviewarticle.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -233,6 +232,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -268,6 +268,7 @@ LaTeX Font Info:    ... okay on input line 13.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 13.
+(reviewarticle.out) (reviewarticle.out)
 \@outlinefile=\write3
 \openout3 = `reviewarticle.out'.
 
@@ -303,79 +304,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 15.
 
 
-LaTeX Warning: Citation `google_privacy' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation `gtfs_spec' on page 1 undefined on input line 28.
-
-
-
 [1
 
 {C:/Users/anhkh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: Citation `osm_wiki' on page 2 undefined on input line 33.
-
-
-LaTeX Warning: Citation `osm_completeness' on page 2 undefined on input line 33
-.
-
-
-LaTeX Warning: Citation `delling_transit_routing' on page 2 undefined on input 
-line 38.
-
-
-LaTeX Warning: Citation `opensource_values' on page 2 undefined on input line 4
-3.
-
-
-LaTeX Warning: Citation `opensource_learning' on page 2 undefined on input line
- 43.
-
-
-LaTeX Warning: Citation `nlnet_case_study' on page 2 undefined on input line 45
-.
-
-
-LaTeX Warning: Citation `google_privacy' on page 2 undefined on input line 50.
-
-
-
 [2]
 
-LaTeX Warning: Citation `osm_completeness' on page 3 undefined on input line 84
-.
-
-
-
-[3]
-No file reviewarticle.bbl.
-
+[3] (reviewarticle.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+)
 
 [4] (reviewarticle.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `reviewarticle.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `reviewarticle.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1B11DEB1EF225311E14CC4836FF7D6CA;2701.
+Package rerunfilecheck Info: File `reviewarticle.out' has not changed.
+(rerunfilecheck)             Checksum: 1B11DEB1EF225311E14CC4836FF7D6CA;2701.
  ) 
 Here is how much of TeX's memory you used:
- 8907 strings out of 468130
- 139538 string characters out of 5430633
- 555208 words of memory out of 5000000
- 37449 multiletter control sequences out of 15000+600000
- 630500 words of font info for 52 fonts, out of 8000000 for 9000
+ 8973 strings out of 468130
+ 140902 string characters out of 5430633
+ 555617 words of memory out of 5000000
+ 37489 multiletter control sequences out of 15000+600000
+ 633147 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,929b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\anhkh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -384,10 +341,12 @@ ts/cm/cmbx10.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/anhkh/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on reviewarticle.pdf (4 pages, 96667 bytes).
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/anhkh/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/anhkh/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on reviewarticle.pdf (4 pages, 129017 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
