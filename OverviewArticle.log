@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  14 DEC 2025 19:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  14 DEC 2025 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -448,169 +448,84 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 
-LaTeX Warning: Citation `google_privacy' on page 1 undefined on input line 23.
-
-
-LaTeX Warning: Citation `gtfs_spec' on page 1 undefined on input line 23.
-
-
-LaTeX Warning: Citation `osm_wiki' on page 1 undefined on input line 23.
-
-
-LaTeX Warning: Citation `delling_transit_routing' on page 1 undefined on input 
-line 23.
-
-
-LaTeX Warning: Citation `opensource_values' on page 1 undefined on input line 2
-3.
-
-
-LaTeX Warning: Citation `nlnet_case_study' on page 1 undefined on input line 23
-.
-
-
-
 [1
 
 {C:/Users/anhkh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: Citation `google_privacy' on page 2 undefined on input line 28.
-
-
-LaTeX Warning: Citation `opensource_values' on page 2 undefined on input line 2
-8.
-
-
-LaTeX Warning: Citation `gtfs_spec' on page 2 undefined on input line 36.
-
-
-LaTeX Warning: Citation `osm_wiki' on page 2 undefined on input line 37.
-
-
-LaTeX Warning: Citation `osm_completeness' on page 2 undefined on input line 37
-.
-
-
-LaTeX Warning: Citation `google_privacy' on page 2 undefined on input line 41.
-
-
-LaTeX Warning: Citation `delling_transit_routing' on page 2 undefined on input 
-line 41.
-
-
-LaTeX Warning: Citation `nlnet_case_study' on page 2 undefined on input line 43
-.
-
-
-LaTeX Warning: Citation `opensource_values' on page 2 undefined on input line 4
-9.
-
-
-LaTeX Warning: Citation `gdpr_framework' on page 2 undefined on input line 49.
-
-
-
 [2]
-<SystemArchitecture.pdf, id=22, 973.6375pt x 642.4pt>
+<SystemArchitecture.pdf, id=118, 973.6375pt x 642.4pt>
 File: SystemArchitecture.pdf Graphic file (type pdf)
 <use SystemArchitecture.pdf>
-Package pdftex.def Info: SystemArchitecture.pdf  used on input line 54.
+Package pdftex.def Info: SystemArchitecture.pdf  used on input line 75.
 (pdftex.def)             Requested size: 364.19667pt x 240.29167pt.
 
 
-LaTeX Warning: Citation `foss_impact' on page 3 undefined on input line 59.
+[3]
 
-
-LaTeX Warning: Citation `foss_impact' on page 3 undefined on input line 62.
-
-
-
-[3 <./SystemArchitecture.pdf>]
-
-LaTeX Warning: Citation `gdpr_framework' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Citation `opensource_learning' on page 4 undefined on input line
- 69.
-
-
-LaTeX Warning: Citation `opensource_dissemination' on page 4 undefined on input
- line 72.
-
-
-LaTeX Warning: Reference `tab:workplan' on page 4 undefined on input line 75.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
-[]|\OT1/cmr/m/n/12 Research & Data
+[4 <./SystemArchitecture.pdf>]
+Overfull \hbox (12.66129pt too wide) in paragraph at lines 111--111
+ []|\OT1/cmr/m/n/12 Commercial/Proprietary| 
  []
 
 
-LaTeX Warning: Citation `opensource_dissemination' on page 4 undefined on input
- line 91.
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 91--92
-\OT1/cmr/m/n/12 doc-u-men-ta-tion; pub-lish re-sults [[]].
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\OT1/cmr/m/n/12 datasets; pre-pare im-port/validation
  []
 
 
-
-[4]
-
-LaTeX Warning: Citation `opensource_budget' on page 5 undefined on input line 1
-00.
+Underfull \hbox (badness 7759) in paragraph at lines 130--131
+[]|\OT1/cmr/m/n/12 Months 7--
+ []
 
 
-LaTeX Warning: Citation `opensource_learning' on page 5 undefined on input line
- 103.
+Underfull \hbox (badness 1210) in paragraph at lines 132--132
+[]|\OT1/cmr/m/n/12 Compare pro-to-type per-for-mance with
+ []
 
 
-LaTeX Warning: Citation `opensource_dissemination' on page 5 undefined on input
- line 103.
+Overfull \hbox (25.23766pt too wide) in alignment at lines 125--134
+ [] [] [] [] 
+ []
 
 
 
 [5]
-No file OverviewArticle.bbl.
-(OverviewArticle.aux)
+
+[6] (OverviewArticle.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
+[]\OT1/cmr/m/n/12 OpenStreetMap Con-trib-u-tors.  Open-streetmap wiki.  []$\OT1
+/cmtt/m/n/12 https : / / wiki .
+ []
+
+)
+
+[7] (OverviewArticle.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `OverviewArticle.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `OverviewArticle.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  8F3E1FB74B8AB4BF99332849AE4FE665;2780.
+Package rerunfilecheck Info: File `OverviewArticle.out' has not changed.
+(rerunfilecheck)             Checksum: 75EADE6244F405D3E4DEE4E04F5118F8;4183.
  ) 
 Here is how much of TeX's memory you used:
- 11320 strings out of 468130
- 181409 string characters out of 5430633
- 599357 words of memory out of 5000000
- 39804 multiletter control sequences out of 15000+600000
- 634370 words of font info for 66 fonts, out of 8000000 for 9000
+ 11394 strings out of 468130
+ 182720 string characters out of 5430633
+ 604501 words of memory out of 5000000
+ 39849 multiletter control sequences out of 15000+600000
+ 634886 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1019b,501s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1184b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\anhkh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/anhkh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/anhkh/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on OverviewArticle.pdf (5 pages, 92682 bytes).
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/anhkh/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/anhkh/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on OverviewArticle.pdf (7 pages, 142796 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
