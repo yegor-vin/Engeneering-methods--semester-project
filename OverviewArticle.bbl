@@ -1,0 +1,325 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{delling_transit_routing}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=bc775b0bfe2f5eba2c0d55106a052b55}{%
+           family={Delling},
+           familyi={D\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=58fb32d0e500e97fc503f4e75953eaaf}{%
+           family={Pajor},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8839683a16ad350312493c2e29f35b86}{%
+           family={Werneck},
+           familyi={W\bibinitperiod},
+           given={Renato\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{db1be0529168d659399b5e94286411e9}
+      \strng{fullhash}{db1be0529168d659399b5e94286411e9}
+      \strng{fullhashraw}{db1be0529168d659399b5e94286411e9}
+      \strng{bibnamehash}{db1be0529168d659399b5e94286411e9}
+      \strng{authorbibnamehash}{db1be0529168d659399b5e94286411e9}
+      \strng{authornamehash}{db1be0529168d659399b5e94286411e9}
+      \strng{authorfullhash}{db1be0529168d659399b5e94286411e9}
+      \strng{authorfullhashraw}{db1be0529168d659399b5e94286411e9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Algorithm Engineering (SEA)}
+      \field{title}{Round-Based Public Transit Routing}
+      \field{year}{2012}
+      \field{pages}{130\bibrangedash 140}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-642-30850-5_12
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-642-30850-5_12
+      \endverb
+    \endentry
+    \entry{gdpr_framework}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a1b813a6e85874b4c945aec2cdbea74c}{%
+           family={{European Commission}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{fullhash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{fullhashraw}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{bibnamehash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{authorbibnamehash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{authornamehash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{authorfullhash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{authorfullhashraw}{a1b813a6e85874b4c945aec2cdbea74c}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Official Journal of the European Union}
+      \field{note}{Regulation (EU) 2016/679}
+      \field{title}{EU General Data Protection Regulation (GDPR): Framework for Data Privacy in Digital Services}
+      \field{year}{2018}
+    \endentry
+    \entry{google_privacy}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={{Google}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://policies.google.com/privacy}}
+      \field{note}{Accessed 2025-11-02}
+      \field{title}{Privacy \& Terms - Google}
+      \field{year}{2025}
+    \endentry
+    \entry{gtfs_spec}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=6bc28252c14133d21331dc54856c1797}{%
+           family={{Google Developers}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{fullhash}{6bc28252c14133d21331dc54856c1797}
+      \strng{fullhashraw}{6bc28252c14133d21331dc54856c1797}
+      \strng{bibnamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorbibnamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authornamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorfullhash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorfullhashraw}{6bc28252c14133d21331dc54856c1797}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://developers.google.com/transit/gtfs}}
+      \field{note}{Accessed 2025-11-04}
+      \field{title}{General Transit Feed Specification (GTFS)}
+      \field{year}{2023}
+    \endentry
+    \entry{opensource_budget}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=af90f8a4083472ccbb27f226aeca1e6e}{%
+           family={{Linux Foundation Research}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{af90f8a4083472ccbb27f226aeca1e6e}
+      \strng{fullhash}{af90f8a4083472ccbb27f226aeca1e6e}
+      \strng{fullhashraw}{af90f8a4083472ccbb27f226aeca1e6e}
+      \strng{bibnamehash}{af90f8a4083472ccbb27f226aeca1e6e}
+      \strng{authorbibnamehash}{af90f8a4083472ccbb27f226aeca1e6e}
+      \strng{authornamehash}{af90f8a4083472ccbb27f226aeca1e6e}
+      \strng{authorfullhash}{af90f8a4083472ccbb27f226aeca1e6e}
+      \strng{authorfullhashraw}{af90f8a4083472ccbb27f226aeca1e6e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.linuxfoundation.org/research}}
+      \field{note}{Accessed 2025-11-04}
+      \field{title}{Cost Efficiency in Open Source Development Projects}
+      \field{year}{2023}
+    \endentry
+    \entry{nlnet_case_study}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=78236e09de27e019cac217e393f1b88b}{%
+           family={{NLnet Foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{78236e09de27e019cac217e393f1b88b}
+      \strng{fullhash}{78236e09de27e019cac217e393f1b88b}
+      \strng{fullhashraw}{78236e09de27e019cac217e393f1b88b}
+      \strng{bibnamehash}{78236e09de27e019cac217e393f1b88b}
+      \strng{authorbibnamehash}{78236e09de27e019cac217e393f1b88b}
+      \strng{authornamehash}{78236e09de27e019cac217e393f1b88b}
+      \strng{authorfullhash}{78236e09de27e019cac217e393f1b88b}
+      \strng{authorfullhashraw}{78236e09de27e019cac217e393f1b88b}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://nlnet.nl/project/OpenMobility/}}
+      \field{note}{Accessed 2025-11-04}
+      \field{title}{NLnet Case Study on Open-Source Mobility Tools}
+      \field{year}{2023}
+    \endentry
+    \entry{foss_impact}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=77a9a07721774fc16ca0e4b8f5ce804a}{%
+           family={{OECD Digital Economy Papers}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{77a9a07721774fc16ca0e4b8f5ce804a}
+      \strng{fullhash}{77a9a07721774fc16ca0e4b8f5ce804a}
+      \strng{fullhashraw}{77a9a07721774fc16ca0e4b8f5ce804a}
+      \strng{bibnamehash}{77a9a07721774fc16ca0e4b8f5ce804a}
+      \strng{authorbibnamehash}{77a9a07721774fc16ca0e4b8f5ce804a}
+      \strng{authornamehash}{77a9a07721774fc16ca0e4b8f5ce804a}
+      \strng{authorfullhash}{77a9a07721774fc16ca0e4b8f5ce804a}
+      \strng{authorfullhashraw}{77a9a07721774fc16ca0e4b8f5ce804a}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://doi.org/10.1787/5jm0m4n7zj5s-en}}
+      \field{note}{Accessed 2025-11-04}
+      \field{title}{Impact of Free and Open Source Software on Innovation}
+      \field{year}{2021}
+    \endentry
+    \entry{opensource_values}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=35d827e2a8f2127b88fab45ef43a4f09}{%
+           family={{Open Source Initiative}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{35d827e2a8f2127b88fab45ef43a4f09}
+      \strng{fullhash}{35d827e2a8f2127b88fab45ef43a4f09}
+      \strng{fullhashraw}{35d827e2a8f2127b88fab45ef43a4f09}
+      \strng{bibnamehash}{35d827e2a8f2127b88fab45ef43a4f09}
+      \strng{authorbibnamehash}{35d827e2a8f2127b88fab45ef43a4f09}
+      \strng{authornamehash}{35d827e2a8f2127b88fab45ef43a4f09}
+      \strng{authorfullhash}{35d827e2a8f2127b88fab45ef43a4f09}
+      \strng{authorfullhashraw}{35d827e2a8f2127b88fab45ef43a4f09}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://opensource.org/osd}}
+      \field{note}{Accessed 2025-11-04}
+      \field{title}{Open Source Initiative: Core Values of Open Collaboration}
+      \field{year}{2023}
+    \endentry
+    \entry{opensource_dissemination}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a2b9ce8435390bcbfc05f3cae3948747}{%
+           family={{OpenAIRE}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2b9ce8435390bcbfc05f3cae3948747}
+      \strng{fullhash}{a2b9ce8435390bcbfc05f3cae3948747}
+      \strng{fullhashraw}{a2b9ce8435390bcbfc05f3cae3948747}
+      \strng{bibnamehash}{a2b9ce8435390bcbfc05f3cae3948747}
+      \strng{authorbibnamehash}{a2b9ce8435390bcbfc05f3cae3948747}
+      \strng{authornamehash}{a2b9ce8435390bcbfc05f3cae3948747}
+      \strng{authorfullhash}{a2b9ce8435390bcbfc05f3cae3948747}
+      \strng{authorfullhashraw}{a2b9ce8435390bcbfc05f3cae3948747}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.openaire.eu/open-science-guide}}
+      \field{note}{Accessed 2025-11-04}
+      \field{title}{Best Practices for Dissemination of Open Research Outputs}
+      \field{year}{2024}
+    \endentry
+    \entry{osm_completeness}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=95bb8a37ccf2fa2fd2666e6bc45604e6}{%
+           family={{OpenStreetMap Contributors}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{fullhash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{fullhashraw}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{bibnamehash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{authorbibnamehash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{authornamehash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{authorfullhash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{authorfullhashraw}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \field{extraname}{1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://wiki.openstreetmap.org/wiki/Completeness}}
+      \field{note}{Accessed 2025-11-02}
+      \field{title}{Completeness - OpenStreetMap Wiki}
+      \field{year}{2025}
+    \endentry
+    \entry{osm_wiki}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=95bb8a37ccf2fa2fd2666e6bc45604e6}{%
+           family={{OpenStreetMap Contributors}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{fullhash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{fullhashraw}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{bibnamehash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{authorbibnamehash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{authornamehash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{authorfullhash}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \strng{authorfullhashraw}{95bb8a37ccf2fa2fd2666e6bc45604e6}
+      \field{extraname}{2}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://wiki.openstreetmap.org/wiki/Main_Page}}
+      \field{note}{Accessed 2025-11-04}
+      \field{title}{OpenStreetMap Wiki}
+      \field{year}{2024}
+    \endentry
+    \entry{opensource_learning}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=66963d7cd00d498072e6fa02785917de}{%
+           family={{Red Hat Academy}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{66963d7cd00d498072e6fa02785917de}
+      \strng{fullhash}{66963d7cd00d498072e6fa02785917de}
+      \strng{fullhashraw}{66963d7cd00d498072e6fa02785917de}
+      \strng{bibnamehash}{66963d7cd00d498072e6fa02785917de}
+      \strng{authorbibnamehash}{66963d7cd00d498072e6fa02785917de}
+      \strng{authornamehash}{66963d7cd00d498072e6fa02785917de}
+      \strng{authorfullhash}{66963d7cd00d498072e6fa02785917de}
+      \strng{authorfullhashraw}{66963d7cd00d498072e6fa02785917de}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.redhat.com/en/open-source-stories}}
+      \field{note}{Accessed 2025-11-04}
+      \field{title}{Open Source as a Learning Platform for Students}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

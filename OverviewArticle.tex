@@ -1,0 +1,112 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{array} 
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{multirow} % For the table
+\usepackage{biblatex}
+\addbibresource{OverviewArticle_Refs.bib}
+
+\title{\textbf{Decentralizing Digital Mobility: An Overview of Open-Source, Privacy-First Transit Routing}}
+\author{Student Team, Supervised by Prof. Ján Lang \\ \small Intelligent Data and Systems with Applications (IDSA), FIIT STU}
+\date{December 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The reliance on proprietary, commercial platforms for daily transit planning presents significant societal and privacy challenges, including user profiling and algorithmic opacity~\cite{google_privacy}. This overview presents the rationale and framework for the VV-F project, which aims to develop a fully open-source, privacy-first public transit route planner with native offline capabilities. The project champions ethical technology design by utilizing open standards like GTFS~\cite{gtfs_spec} and OpenStreetMap (OSM)~\cite{osm_wiki}, and implementing a transparent, multi-criteria routing engine~\cite{delling_transit_routing}. The work serves as a practical demonstration of ethical FOSS development~\cite{opensource_values} and contributes to both academic knowledge and social innovation by providing a reproducible, low-resource alternative to centralized mobility services~\cite{nlnet_case_study}.
+\end{abstract}
+
+\newpage
+\section{Introduction}
+Modern digital mobility is dominated by a few large corporations, leading to concerns regarding user data collection, profiling, and algorithmic opacity~\cite{google_privacy}. The VV-F project addresses this gap by creating an ethical, transparent, and trustworthy digital mobility tool built entirely on the principles of Free and Open Source Software (FOSS)~\cite{opensource_values}. The core innovation is the combination of complete offline routing based on open datasets, customizable multi-criteria optimization, and cross-platform deployment. The final deliverable is a functional prototype capable of planning public transport routes for a selected region, released under an open license to ensure reproducibility and future development. The project objectives include developing a functional routing prototype using open data, achieving high correctness compared to commercial tools, and demonstrating a privacy-respecting alternative to proprietary systems.
+
+\section{Technological Foundations and State of Knowledge}
+The technical feasibility of the VV-F project rests on established open data standards and advanced routing theory.
+
+\subsection{Open Data Standards}
+The system is designed to consume two primary global standards:
+\begin{itemize}
+    \item \textbf{GTFS (General Transit Feed Specification):} Used for all aspects of transit schedules, routes, stops, and temporal information~\cite{gtfs_spec}.
+    \item \textbf{OpenStreetMap (OSM):} Utilized for essential geographic and topological information~\cite{osm_wiki}. The completeness and quality of this data are crucial for reliable routing, and resources exist to assess its suitability for specific areas~\cite{osm_completeness}.
+\end{itemize}
+
+\subsection{Routing Algorithms}
+Current commercial systems provide highly accurate routing but rely on centralized infrastructure and opaque algorithms~\cite{google_privacy}. The project’s implementation of a routing engine is founded on academic approaches, specifically drawing inspiration from methods like the station-graph model and multi-criteria optimization which have proven efficient for public-transport navigation problems~\cite{delling_transit_routing}.
+
+The state of knowledge confirms that independent, privacy-preserving routing is feasible, as demonstrated by other open-source initiatives funded by organizations like the NLnet Foundation~\cite{nlnet_case_study}. The VV-F project seeks to advance this domain by focusing specifically on a highly portable, cross-platform mobile solution with robust offline support.
+
+\section{Methodology and Ethical Development}
+The project employs an iterative, incremental development process, which allows for early error detection and continuous refinement based on testing and evaluation.
+
+\subsection{The FOSS and Privacy Framework}
+The decision to pursue a FOSS approach is a fundamental methodological component. It ensures full transparency of algorithms and data transformations, aligning the project with core open-source values~\cite{opensource_values} and addressing ethical concerns about data exploitation and opacity. This ethical choice is further supported by alignment with regulatory frameworks like the EU's General Data Protection Regulation (GDPR), promoting system alternatives that do not rely on data-exploiting services~\cite{gdpr_framework}. The open-source nature facilitates collaborative development and allows the project to serve as a demonstrator of ethical technology design.
+
+\subsection{Project Architecture}
+The system is conceptualized as a three-layer architecture: Data Layer, Core Routing Engine, and Presentation Layer. This structure ensures modularity and platform independence. \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{SystemArchitecture.pdf}
+    \caption{Conceptual Three-Layer Architecture for the VV-F Mobile Routing Application. The data layer uses open standards and is stored locally; the core engine performs multi-criteria routing; and the presentation layer provides a native cross-platform user interface.}
+\end{figure}
+
+\section{Impact and Dissemination}
+The expected impact of the VV-F project extends across technological, social, and educational domains, demonstrating the broader value of FOSS initiatives in driving innovation~\cite{foss_impact}.
+
+\subsection{Societal and Technological Benefits}
+The project directly contributes to the advancement of privacy-preserving mobility technologies, proving the feasibility of high-quality routing without reliance on commercial tracking platforms~\cite{foss_impact}.
+\begin{itemize}
+    \item \textbf{Social Innovation:} By prioritizing privacy and transparency, the project raises awareness about ethical technology design and encourages alternatives to data-exploiting services~\cite{gdpr_framework}.
+    \item \textbf{Improved Services:} The development of a lightweight, decentralized routing pipeline optimized for offline use contributes to research on low-resource and decentralized mobility tools.
+\end{itemize}
+
+\subsection{Educational Value}
+A significant aspect of the project is its role as an educational case study. It serves as a structured learning environment for first-year students, providing direct exposure to industry-standard development workflows and applied research methods. This structure mirrors established best practices in using open source as an effective learning platform for students~\cite{opensource_learning}, strengthening competencies in data engineering, algorithmic design, and collaboration.
+
+\subsection{Dissemination Strategy}
+To maximize the project's reuse and impact, all code, documentation, and datasets will be publicly available on GitHub under a permissive license, adhering to best practices for dissemination of open research outputs~\cite{opensource_dissemination}. The use of global standards (GTFS and OSM) ensures that the results are universally applicable and can be adapted to transit datasets in any country.
+
+\section{Implementation and Resources}
+The project's implementation follows a defined 24-month work plan, broken into four work packages (WPs), as summarized in Table~\ref{tab:workplan}.
+
+\begin{table}[ht]
+    \centering
+    \caption{Summary of the 24-Month Work Plan and Milestones}
+    \label{tab:workplan}
+    \begin{tabular}{p{1.4cm} p{4cm} p{7cm}}
+    \toprule
+    \textbf{WP} & \textbf{Title} & \textbf{Key Tasks and Duration} \\
+    \midrule
+    WP1 & Research \& Data Prep. & Study GTFS/OSM; gather datasets; prepare import scripts. (Months 1--6) \\
+    \midrule
+    WP2 & Routing Prototype & Implement core routing algorithm; verify correctness against real-world data. (Months 7--14) \\
+    \midrule
+    WP3 & UI \& Offline Support & Develop cross-platform UI; implement persistent offline operation for one region. (Months 15--22) \\
+    \midrule
+    WP4 & Evaluation \& Doc. & Compare with commercial apps; full documentation; publish results~\cite{opensource_dissemination}. (Months 23--24) \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Project Management and Supervision}
+The project team consists of first-year students, whose work is managed iteratively using Git and collaborative platforms. The project is specifically supervised by **Professor Ján Lang** from the Intelligent Data and Systems with Applications (IDSA) research group at FIIT STU. This supervision provides necessary academic guidance in areas like data processing, secure software engineering, and applied algorithm design.
+
+\subsection{Budget and Resource Efficiency}
+The project demonstrates high cost efficiency, as it relies entirely on open-source tools and libraries~\cite{opensource_budget}. The total estimated budget is minimal (€480), covering only essential hardware for cross-platform testing (Android, Mobile Linux) and dissemination costs (printing, hosting). The focus on offline functionality also reduces long-term server hosting and operational costs, contributing to environmental and economic sustainability.
+
+\section{Conclusion}
+The VV-F project represents a compelling application of open-source principles to address critical privacy and societal issues within digital mobility. By leveraging open data standards, advanced algorithms, and a transparent FOSS methodology, the project successfully aims to deliver a functional, privacy-first, and cost-efficient transit routing solution. Its impact extends beyond the technical result, serving as a powerful educational tool~\cite{opensource_learning} and a clear demonstration of ethical technology design that respects user privacy and promotes open innovation. The project’s commitment to open publication~\cite{opensource_dissemination} ensures its continued relevance and potential for future research and deployment.
+
+\newpage
+%\bibliographystyle{plain}
+%\bibliography{OverviewArticle_Refs}
+\printbibliography
+
+\end{document}
