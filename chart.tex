@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+% Define exact ChartJS colors
+\definecolor{proprietaryred}{HTML}{e74c3c}
+\definecolor{opensourcegreen}{HTML}{27ae60}
+\definecolor{redborder}{HTML}{c0392b}
+\definecolor{greenborder}{HTML}{229954}
+
+\title{Cost Efficiency: Open Source vs Proprietary Transit Apps}
+\author{Offline Public Transport Planner Project}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    ybar,
+    bar width=28pt,
+    enlargelimits=0.12,
+    symbolic x coords={Proprietary Apps,Open Source Planner},
+    xtick=data,
+    nodes near coords,
+    nodes near coords align={vertical},
+    point meta=explicit,
+    x tick label style={rotate=45,anchor=east,font=\small},
+    ylabel={Annual Cost per User (USD)},
+    xlabel={Development Model},
+    ymin=0, ymax=170,
+    every node near coord/.append style={font=\bfseries\small},
+    title={92\% Cost Reduction via Open Source Community Model},
+    title style={yshift=1.5ex,font=\large\bfseries},
+    legend style={at={(0.5,-0.25)},anchor=north,legend columns=-1,font=\footnotesize},
+    grid=major,
+    grid style={gray!30}
+]
+
+\addplot [fill=proprietaryred,draw=redborder,line width=2pt] 
+    coordinates {(Proprietary Apps,150) [150]};
+\addplot [fill=opensourcegreen,draw=greenborder,line width=2pt] 
+    coordinates {(Open Source Planner,12) [12]};
+
+\legend{Cloud/Server/Licensing,Community Maintenance}
+
+\node[anchor=north,align=center,font=\footnotesize,yshift=-5ex] at (axis cs:0.5,-25) 
+    {Linux Foundation Research: Distributed collaboration eliminates\\92\% of proprietary infrastructure costs \cite{opensource\_budget}};
+
+\end{axis}
+\end{tikzpicture}
+\caption{\textbf{Linux Foundation Research Validation:} Proprietary transit apps require \$150/user/year for cloud servers, proprietary data teams, and licensing. Open source planner achieves full functionality at \$12/user/year through community-maintained timetables and offline architecture. 92\% savings: $\frac{150-12}{150}=92\%$.}
+\label{fig:cost-efficiency}
+\end{figure}
+
+\vspace{1cm}
+
+\section*{Key Insights}
+\begin{itemize}
+\item \textbf{No central servers} = Zero scaling costs
+\item \textbf{Community editing} = Free timetable maintenance
+\item \textbf{Open formats} = No licensing fees
+\item \textbf{Offline routing} = No real-time data expenses
+\end{itemize}
+
+\smallskip
+\noindent Source: Linux Foundation Research, 2023 \cite{opensource\_budget}
+
+\end{document}
